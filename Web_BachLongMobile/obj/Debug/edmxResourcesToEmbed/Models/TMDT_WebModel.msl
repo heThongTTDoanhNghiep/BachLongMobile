@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TMDT_WebModelStoreContainer" CdmEntityContainer="TMDT_WebEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="TMDT_WebModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Admin1" ColumnName="Admin" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BaiDangs">
+      <EntityTypeMapping TypeName="TMDT_WebModel.BaiDang">
+        <MappingFragment StoreEntitySet="BaiDang">
+          <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
+          <ScalarProperty Name="IDTinhThanh" ColumnName="IDTinhThanh" />
+          <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="GiaSP" ColumnName="GiaSP" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="NgayDang" ColumnName="NgayDang" />
+          <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+          <ScalarProperty Name="Soluongton" ColumnName="Soluongton" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietDanhGiaNguoiMuas">
+      <EntityTypeMapping TypeName="TMDT_WebModel.ChiTietDanhGiaNguoiMua">
+        <MappingFragment StoreEntitySet="ChiTietDanhGiaNguoiMua">
+          <ScalarProperty Name="IDDanhGia" ColumnName="IDDanhGia" />
+          <ScalarProperty Name="IDUserMua" ColumnName="IDUserMua" />
+          <ScalarProperty Name="NgayDanhGia" ColumnName="NgayDanhGia" />
+          <ScalarProperty Name="DiemDanhGia" ColumnName="DiemDanhGia" />
+          <ScalarProperty Name="IDUserBan" ColumnName="IDUserBan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietGioHangs">
+      <EntityTypeMapping TypeName="TMDT_WebModel.ChiTietGioHang">
+        <MappingFragment StoreEntitySet="ChiTietGioHang">
+          <ScalarProperty Name="IDDonHangMua" ColumnName="IDDonHangMua" />
+          <ScalarProperty Name="MaSanPham" ColumnName="MaSanPham" />
+          <ScalarProperty Name="IDUserBan" ColumnName="IDUserBan" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+          <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GioHang_DonHangMua">
+      <EntityTypeMapping TypeName="TMDT_WebModel.GioHang_DonHangMua">
+        <MappingFragment StoreEntitySet="GioHang_DonHangMua">
+          <ScalarProperty Name="IDDonHangMua" ColumnName="IDDonHangMua" />
+          <ScalarProperty Name="IDUserMua" ColumnName="IDUserMua" />
+          <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiSanPhams">
+      <EntityTypeMapping TypeName="TMDT_WebModel.LoaiSanPham">
+        <MappingFragment StoreEntitySet="LoaiSanPham">
+          <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
+          <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuDoiDiems">
+      <EntityTypeMapping TypeName="TMDT_WebModel.PhieuDoiDiem">
+        <MappingFragment StoreEntitySet="PhieuDoiDiem">
+          <ScalarProperty Name="IDDonDoi" ColumnName="IDDonDoi" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="NgayDoi" ColumnName="NgayDoi" />
+          <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+          <ScalarProperty Name="SoDiemDoiDuoc" ColumnName="SoDiemDoiDuoc" />
+          <ScalarProperty Name="TenNguoiDoi" ColumnName="TenNguoiDoi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TMDT_WebModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinhThanhs">
+      <EntityTypeMapping TypeName="TMDT_WebModel.TinhThanh">
+        <MappingFragment StoreEntitySet="TinhThanh">
+          <ScalarProperty Name="IDTinhThanh" ColumnName="IDTinhThanh" />
+          <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrangThai_DonHangMua">
+      <EntityTypeMapping TypeName="TMDT_WebModel.TrangThai_DonHangMua">
+        <MappingFragment StoreEntitySet="TrangThai_DonHangMua">
+          <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+          <ScalarProperty Name="TenTrangThai" ColumnName="TenTrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrangThaiBaiDangs">
+      <EntityTypeMapping TypeName="TMDT_WebModel.TrangThaiBaiDang">
+        <MappingFragment StoreEntitySet="TrangThaiBaiDang">
+          <ScalarProperty Name="IDTrangThai" ColumnName="IDTrangThai" />
+          <ScalarProperty Name="TenTrangThai" ColumnName="TenTrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrangThaiUsers">
+      <EntityTypeMapping TypeName="TMDT_WebModel.TrangThaiUser">
+        <MappingFragment StoreEntitySet="TrangThaiUser">
+          <ScalarProperty Name="IDTrangThaiUser" ColumnName="IDTrangThaiUser" />
+          <ScalarProperty Name="TenTrangThaiUser" ColumnName="TenTrangThaiUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="TMDT_WebModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="DanhGia" ColumnName="DanhGia" />
+          <ScalarProperty Name="IDTrangThaiUser" ColumnName="IDTrangThaiUser" />
+          <ScalarProperty Name="Tien" ColumnName="Tien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

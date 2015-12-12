@@ -1,0 +1,101 @@
+﻿@using Web_TMDT.Models
+@using PagedList.Mvc;
+@model  PagedList.PagedList<ThongTinMuaHang>
+
+@{
+    ViewBag.Title = "ThongTinMuaHang";
+    Layout = "~/Views/LayOut/LayOutThongTin.cshtml";
+}
+@using (Html.BeginForm("ThongTinDonHang", "BaiDang"))
+{ 
+    
+<h3 class="nguoimua">Người Mua: @Session["Name"]</h3>
+<h3 class="nguoimua">Số Đơn Hàng: @ViewBag.sl</h3>
+<table id="divgiohang" border="1">
+    <tr class="thuoctinh">
+
+        <td width="130"><h5 class="aa">Mã Đơn Hàng</h5></td>
+
+        @*<td width="100"><h5 class="aa">Tổng Sản Phẩm</h5></td>*@
+
+        <td width="200"><h5 class="aa">Tổng Tiền</h5></td>
+
+        <td width="150"><h5 class="aa">Ngày Lập</h5></td>
+
+        <td width="230"><h5 class="aa">Chi Tiết Đơn Hàng</h5></td>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td width="50"><h5 class="bb">@item.IDDonHang</h5></td>
+
+            @*<td width="50"><h5 class="bb">@item.TongSP</h5></td>*@
+
+            <td><h5 class="bb">@String.Format("{0:0,0}", @item.TongTien) VNĐ</h5></td>
+            <td width="150"><h5 class="bb">@String.Format("{0:dd/MM/yyyy}",@item.NgayLap)</h5></td>
+            @*<td width="200"><a href="~/BaiDang/ThongTindonHang" class="mmm" >@Session["IDDonHang"] = @item.IDDonHangMua Chi Tiết Đơn Hàng</a></td>*@
+            <td><h5 class="bb"><a class="mmm" href="@Url.Action("ThongTinDonHang","BaiDang", new {@id=item.IDDonHang})">Chi Tiết Đơn Hàng</a></h5></td>
+        </tr>
+    }
+
+</table>
+    <div>
+        @*tao trang lien ket*@
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+
+        <div class="pt">
+            @Html.PagedListPager(Model, page => Url.Action("ThongTinMuaHang", new { page = page }))
+        </div>
+    </div>
+}
+
+
+<style>
+    .pt li {
+        margin-left: 5px;
+        display: inline;
+    }
+    .aa{
+        color: white;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .bb {
+        margin-left: 10px;
+        margin-top: 5px;
+        color: black;
+    }
+
+    .mmm{
+        color: blue;
+    }
+    .mmm a:hover{
+        color: yellow;
+    }
+    .nguoimua {
+        margin-top: -10px;
+        margin-left: 15px;
+        color: black;
+    }
+    #divgiohang {
+        border: 0.5px solid #a4f1e5;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        margin-top: 10px;
+    }
+
+    #divgiohang td {
+        border: 1px solid #000000;
+    }
+
+    .thuoctinh {
+        background-color: #14a19a;
+        margin-left: 2%;
+        align-items: center;
+        
+    }
+</style>

@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/LayOut/fonts.css" rel="stylesheet" />
+    @*<link href="~/Content/LayOut/screen.css" rel="stylesheet" />*@
+    <link href="~/Content/LayOut/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/LayOut/CssLayout.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    @*ChènQuảngCáo*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/NivoSlider/jquery.nivo.slider.js"></script>
+    <script src="~/NivoSlider/jquery.nivo.slider.pack.js"></script>
+    <link href="~/NivoSlider/nivo-slider.css" rel="stylesheet" />
+
+
+    
+</head>
+<body>
+  
+    <section class="header">
+        <div class="container">
+            <div class="flash">
+                <div class="Dangkydangnhap">
+                    @if (Session["Name"] != null)
+                    {
+                        <div id="logo">
+                            <a href="~/SPMoi/SPMoi">
+                                <img src="~/Hinh/logo.png" />
+                            </a>
+                        </div>
+                        <div id="menu">
+                            <ul>
+                                <li class="gh">@Html.Action("GioHangPartial", "GioHang")</li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        @Session["Name"].ToString()<i class="fa fa-user fa-fw"></i>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="~/Users/SuaUser">Thông Tin cá nhân</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/Users/MK">Đổi Mật Khẩu</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/BaiDang/ThongTinMuaHang">Thông Tin Mua hàng</a>
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Đăng Xuất", "Logout", "Users", null, htmlAttributes: new { @class = "Users" })
+                                        </li>
+                                    </ul>
+
+                                    <!-- /.dropdown-user -->
+                                </li>
+                            </ul>
+                        </div>
+
+                    }
+                    else
+                    {
+                        <div id="bbb">
+                            <a href="~/SPMoi/SPMoi">
+                                <img src="~/Hinh/logo.png" />
+                            </a>
+                        </div>
+                        @Html.Action("GioHangPartial", "GioHang")
+
+                        <b>
+                            <i class="fa fa-sign-in"></i>
+                            @Html.ActionLink("Đăng Ký", "Register", "Users", null, htmlAttributes: new { @class = "Users" })
+                        </b>
+                        <b>
+                            <i class="fa fa-unlock"></i>
+                            @Html.ActionLink("Đăng Nhập", "Login", "Users", null, htmlAttributes: new { @class = "Users" })
+                        </b>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+        @*<div class="flash success" id="divmenu">
+            <div id="raovat">
+                <div>
+                    @Html.Action("GioHangPartial", "GioHang")
+                </div>
+                
+                <i class="fa fa-pencil-square-o"></i>
+                @Html.ActionLink("Đăng tin Sản Phẩm", "BaiDang", "BaiDang", null, htmlAttributes: new { @class = "DangTin" })
+
+            </div>
+            
+            <div class="iconlogo">
+                <a href="~/SPMoi/SPMoi">
+                    <img src="~/Hinh/iPhone-icon.png" /></a>
+                </div>
+           
+        </div>*@
+
+    </section>
+
+    <section class="QuangCao">
+        <div class="container">
+            <div id="slider" class="nivoSlider">
+                <img src="~/Hinh/aaaa.png" />
+                <img src="~/Hinh/bbbbb.png" />
+                <img src="~/Hinh/ccccc.png" />
+                <img src="~/Hinh/dddd.png" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+            </div>
+        </div>
+    </section>    
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" id="menuLoai">
+                    <div class="activity">
+                        @Html.Action("LoaiSPPartial", "Home")
+                    </div>
+                </div>
+                <div class="col-md-9" id="noidung">
+                    <div id="txttimkiem">
+                        @Html.Action("TimKiem", "Home")
+                    </div>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">           
+                <i class="fa fa-phone"></i>: 08.35353508                
+               <div>273 An Dương Vương, Quận 5, TP.Hồ Chí Minh
+            </div>
+         
+        </div>
+    </section>
+    
+</body>
+</html>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#slider').nivoSlider({
+
+            controlNav: false,
+            prevText: '',
+            nextText: ''
+        });
+        
+    });
+</script>
+

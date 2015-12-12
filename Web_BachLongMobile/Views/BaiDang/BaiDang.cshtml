@@ -1,0 +1,90 @@
+﻿@model Web_TMDT.Models.BaiDang
+
+@{
+    ViewBag.Title = "BaiDang";
+    Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
+}
+
+@using (Html.BeginForm("BaiDang", "BaiDang", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="Noidung">
+        @*<div class="form-horizontal">*@
+            <div id="aaa">
+                <div class="ii"></div>
+                <h2 class="td">Đăng Thông Tin Sản Phẩm</h2>
+            </div>
+            @Html.ValidationSummary(true)
+        <div class="body">
+            <div class="form-group">
+                <div class="lab">
+                   <h5 class="lb">@Html.LabelFor(model => model.MaLoai)</h5>
+                </div>
+                <div class="col-md-10">
+                    @Html.DropDownList("MaLoai", "--------Chọn Loại Sản Phẩm--------")
+                    @Html.ValidationMessageFor(model => model.MaLoai)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="lab">
+                    @Html.LabelFor(model => model.TenSP)
+                </div>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.TenSP, new { @required = "required" })
+                    @Html.ValidationMessageFor(model => model.TenSP)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="lab">
+                    @Html.LabelFor(model => model.GiaSP)
+                </div>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.GiaSP)
+                    @Html.ValidationMessageFor(model => model.GiaSP)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="lab">
+                    @Html.LabelFor(model => model.SoLuong)
+                </div>
+                <div class="col-md-10">
+                    <input id="SoLuong" type="text" name="sl" width="200" height="20" required />
+                </div>
+            </div>
+        <br />
+            <div class="form-group">
+                <div class="lab">
+                    @Html.LabelFor(model => model.HinhAnh)
+                </div>
+                <div class="col-md-10">
+                    <input type="file" name="fileUpload" class="button-submit" required />
+                    @ViewBag.ThongBao
+                </div>
+            </div>
+        <br/>
+            <div class="form-group">
+                <div class="lab">
+                    @Html.LabelFor(model => model.MoTa)
+                </div>
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.MoTa, new { @required = "required" })
+                    @Html.ValidationMessageFor(model => model.MoTa)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <div class="bt">
+                        <button class="button-submit">Đăng Tin</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    @*</div>*@
+}
+
+
+

@@ -1,0 +1,421 @@
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll.config
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.pdb
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Owin.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Razor.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\WebGrease.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Razor.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.pdb
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.dll
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.pdb
+E:\kimkim\TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll.config
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.pdb
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Owin.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Razor.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\WebGrease.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Razor.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.pdb
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.dll
+C:\Users\Nhan Chung\Downloads\Web_TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.pdb
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll.config
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Web_TMDT.pdb
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Owin.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Razor.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\WebGrease.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.Razor.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.pdb
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Web_TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.dll
+D:\Web_TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.pdb
+D:\Web_TMDT\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll.config
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Web_TMDT.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Web_TMDT.pdb
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\EntityFramework.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Owin.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Razor.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\WebGrease.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\EntityFramework.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\EntityFramework.SqlServer.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Helpers.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Mvc.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Optimization.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.Razor.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Newtonsoft.Json.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Antlr3.Runtime.pdb
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\obj\Debug\Web_TMDT.pdb
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\PagedList.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\PagedList.Mvc.dll
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\PagedList.xml
+D:\HTTT_DoanhNghiep\Web_TMDT\Web_TMDT\bin\PagedList.Mvc.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Web_TMDT.dll.config
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Web_TMDT.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Web_TMDT.pdb
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Antlr3.Runtime.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.SqlServer.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Newtonsoft.Json.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Owin.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.Mvc.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Helpers.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Mvc.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Optimization.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Razor.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\WebGrease.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.SqlServer.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.Mvc.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Helpers.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Mvc.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Optimization.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Razor.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Newtonsoft.Json.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Antlr3.Runtime.pdb
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\obj\Debug\Web_TMDT.dll
+D:\HTTT_DoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\obj\Debug\Web_TMDT.pdb
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Web_TMDT.dll.config
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Web_TMDT.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Web_TMDT.pdb
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Antlr3.Runtime.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.SqlServer.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Newtonsoft.Json.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Owin.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.Mvc.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Helpers.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Mvc.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Optimization.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Razor.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\WebGrease.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\EntityFramework.SqlServer.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\PagedList.Mvc.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Helpers.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Mvc.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Optimization.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.Razor.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Newtonsoft.Json.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Antlr3.Runtime.pdb
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\obj\Debug\Web_TMDT.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\obj\Debug\Web_TMDT.pdb
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\Microsoft.Expression.Drawing.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\de\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\es\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\fr\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\it\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\ja\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\ko\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\ru\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+D:\HTTTDoanhNghiep\HTTT_DoanhNghiep\Web_TMDT\bin\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\obj\Debug\Web_TMDT.csprojResolveAssemblyReference.cache
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\obj\Debug\Web_TMDT.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\obj\Debug\Web_TMDT.pdb
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Web_TMDT.dll.config
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Web_TMDT.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Web_TMDT.pdb
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Antlr3.Runtime.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\EntityFramework.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\EntityFramework.SqlServer.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Expression.Drawing.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Google.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Web.Infrastructure.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Newtonsoft.Json.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Owin.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\PagedList.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\PagedList.Mvc.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Helpers.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Mvc.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Optimization.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Razor.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.WebPages.Deployment.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.WebPages.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.WebPages.Razor.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\WebGrease.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\EntityFramework.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\EntityFramework.SqlServer.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\PagedList.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\PagedList.Mvc.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Helpers.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Mvc.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Optimization.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.Razor.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.WebPages.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.WebPages.Deployment.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\System.Web.WebPages.Razor.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Newtonsoft.Json.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Antlr3.Runtime.pdb
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.AspNet.Identity.Core.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.AspNet.Identity.Owin.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Host.SystemWeb.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Facebook.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Cookies.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.OAuth.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Google.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.Twitter.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\de\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\es\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\fr\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\it\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\ja\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\ko\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\ru\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_TMDT\bin\zh-Hant\Microsoft.Expression.Drawing.resources.dll

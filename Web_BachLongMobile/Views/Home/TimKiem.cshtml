@@ -1,0 +1,22 @@
+﻿
+
+@using (Html.BeginForm("KQTim", "TimKiem"))
+{
+    @*<div class="timTT">
+    <h5 class="qq">Tìm Tên & Loại Sản Phẩm:</h5>
+    </div>*@
+    <div class="tu">
+        @Html.DropDownList("thang", "--Giá Từ--")
+    </div>
+    <div class="den">@Html.DropDownList("nam", "--Giá Đến--")</div>
+    <div id="tim">       
+        @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập từ khoá cần tìm..." })
+    </div>
+    <div class="loai">@Html.DropDownList("MaLoai", "----Tất Cả Loại Sản Phẩm----")</div>
+    <div id="buttontim">
+       <button><i class="fa fa-search"></i></button>
+    </div>
+}
+
+
+    

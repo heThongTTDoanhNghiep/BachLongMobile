@@ -1,0 +1,23 @@
+﻿
+@*@{
+    ViewBag.Title = "TimCTDH";
+    Layout = "~/Views/LayOut/TimChiTietDonHang.cshtml";
+}*@
+@using (Html.BeginForm("KQTimCTDH", "BaiDang"))
+{
+ 
+    
+<div id="lb">
+    <h3 class="tl">Tìm Tên Sản Phẩm:</h3>
+</div>   
+<div id="tim">    
+    @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập từ khoá cần tìm..." })
+</div>
+<div id="buttontim">
+    <button type="submit"><img src="~/Hinh/search.png" /></button>
+</div>
+}
+
+
+
+

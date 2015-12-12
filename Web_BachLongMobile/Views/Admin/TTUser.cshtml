@@ -1,0 +1,77 @@
+﻿@using Web_TMDT.Models;
+@model List<User>
+
+@{
+    ViewBag.Title = "TTUser";
+    Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
+}
+<br/>
+<h3 class="aaaa">Thông Tin Ngươi Mua</h3>
+<br />
+<table class="table" border="1">
+    <tr class="ngdung">
+        <th>
+            <label>Mã Người dùng</label>
+
+        </th>
+        <th>
+            <label>Tên Người dùng</label>
+        </th>
+
+        <th>
+            <label>Địa Chỉ</label>
+        </th>
+        <th>
+            <label>Email</label>
+        </th>
+        <th>
+            <label>Số Điện thoại</label>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai)
+            </td>
+        </tr>
+    }
+
+</table>
+    <style>
+        .aaaa {
+            color: blue;
+        }
+        .pt li {
+            display: inline;
+        }
+
+        .ngdung {
+            background-color: #14a19a;
+            color: white;
+        }
+        .table {
+            background-color: #fafef7;
+        }
+        .ql {
+            color: blue;
+        }
+    </style>
+
+
+
+

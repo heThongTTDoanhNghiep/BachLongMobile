@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HTTT_DoanhNghiepModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BaiDang">
+    <Key>
+      <PropertyRef Name="MaSanPham" />
+    </Key>
+    <Property Name="MaSanPham" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaLoai" Type="Int32" Nullable="false" />
+    <Property Name="TenSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GiaSP" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="HinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NgayDang" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IDTrangThai" Type="Int32" Nullable="false" />
+    <Property Name="Soluongton" Type="Int32" Nullable="false" />
+    <Property Name="DanhGia" Type="Double" Nullable="false" />
+    <NavigationProperty Name="LoaiSanPham" Relationship="Self.FK_BaiDang_LoaiSanPham" FromRole="BaiDang" ToRole="LoaiSanPham" />
+    <NavigationProperty Name="TrangThaiBaiDang" Relationship="Self.FK_BaiDang_TrangThaiBaiDang" FromRole="BaiDang" ToRole="TrangThaiBaiDang" />
+    <NavigationProperty Name="ChiTietGioHangs" Relationship="Self.FK_ChiTietGioHang_BaiDang" FromRole="BaiDang" ToRole="ChiTietGioHang" />
+  </EntityType>
+  <EntityType Name="ChiTietDanhGiaNguoiMua">
+    <Key>
+      <PropertyRef Name="IDDanhGia" />
+    </Key>
+    <Property Name="IDDanhGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDUserMua" Type="Int32" Nullable="false" />
+    <Property Name="NgayDanhGia" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DiemDanhGia" Type="Int32" Nullable="false" />
+    <Property Name="MaSanPham" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ChiTietDanhGiaNguoiMua_User" FromRole="ChiTietDanhGiaNguoiMua" ToRole="User" />
+  </EntityType>
+  <EntityType Name="ChiTietGioHang">
+    <Key>
+      <PropertyRef Name="IDDonHangMua" />
+      <PropertyRef Name="MaSanPham" />
+    </Key>
+    <Property Name="IDDonHangMua" Type="Int32" Nullable="false" />
+    <Property Name="MaSanPham" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="ThanhTien" Type="Double" Nullable="false" />
+    <NavigationProperty Name="BaiDang" Relationship="Self.FK_ChiTietGioHang_BaiDang" FromRole="ChiTietGioHang" ToRole="BaiDang" />
+    <NavigationProperty Name="GioHang_DonHangMua" Relationship="Self.FK_ChiTietGioHang_GioHang_DonHangMua1" FromRole="ChiTietGioHang" ToRole="GioHang_DonHangMua" />
+  </EntityType>
+  <EntityType Name="GioHang_DonHangMua">
+    <Key>
+      <PropertyRef Name="IDDonHangMua" />
+    </Key>
+    <Property Name="IDDonHangMua" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDUserMua" Type="Int32" Nullable="false" />
+    <Property Name="TongTien" Type="Double" Nullable="false" />
+    <Property Name="NgayLap" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IDTrangThai" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ChiTietGioHangs" Relationship="Self.FK_ChiTietGioHang_GioHang_DonHangMua1" FromRole="GioHang_DonHangMua" ToRole="ChiTietGioHang" />
+    <NavigationProperty Name="User" Relationship="Self.FK_GioHang_DonHangMua_User" FromRole="GioHang_DonHangMua" ToRole="User" />
+  </EntityType>
+  <EntityType Name="LoaiSanPham">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoai" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="BaiDangs" Relationship="Self.FK_BaiDang_LoaiSanPham" FromRole="LoaiSanPham" ToRole="BaiDang" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TrangThai_DonHangMua">
+    <Key>
+      <PropertyRef Name="IDTrangThai" />
+    </Key>
+    <Property Name="IDTrangThai" Type="Int32" Nullable="false" />
+    <Property Name="TenTrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrangThaiBaiDang">
+    <Key>
+      <PropertyRef Name="IDTrangThai" />
+    </Key>
+    <Property Name="IDTrangThai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTrangThai" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="BaiDangs" Relationship="Self.FK_BaiDang_TrangThaiBaiDang" FromRole="TrangThaiBaiDang" ToRole="BaiDang" />
+  </EntityType>
+  <EntityType Name="TrangThaiUser">
+    <Key>
+      <PropertyRef Name="IDTrangThaiUser" />
+    </Key>
+    <Property Name="IDTrangThaiUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTrangThaiUser" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_User_TrangThaiUser" FromRole="TrangThaiUser" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IDUser" />
+    </Key>
+    <Property Name="IDUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDTrangThaiUser" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ChiTietDanhGiaNguoiMuas" Relationship="Self.FK_ChiTietDanhGiaNguoiMua_User" FromRole="User" ToRole="ChiTietDanhGiaNguoiMua" />
+    <NavigationProperty Name="GioHang_DonHangMua" Relationship="Self.FK_GioHang_DonHangMua_User" FromRole="User" ToRole="GioHang_DonHangMua" />
+    <NavigationProperty Name="TrangThaiUser" Relationship="Self.FK_User_TrangThaiUser" FromRole="User" ToRole="TrangThaiUser" />
+  </EntityType>
+  <Association Name="FK_BaiDang_LoaiSanPham">
+    <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="1" />
+    <End Role="BaiDang" Type="Self.BaiDang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiSanPham">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="BaiDang">
+        <PropertyRef Name="MaLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BaiDang_TrangThaiBaiDang">
+    <End Role="TrangThaiBaiDang" Type="Self.TrangThaiBaiDang" Multiplicity="1" />
+    <End Role="BaiDang" Type="Self.BaiDang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrangThaiBaiDang">
+        <PropertyRef Name="IDTrangThai" />
+      </Principal>
+      <Dependent Role="BaiDang">
+        <PropertyRef Name="IDTrangThai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietGioHang_BaiDang">
+    <End Role="BaiDang" Type="Self.BaiDang" Multiplicity="1" />
+    <End Role="ChiTietGioHang" Type="Self.ChiTietGioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BaiDang">
+        <PropertyRef Name="MaSanPham" />
+      </Principal>
+      <Dependent Role="ChiTietGioHang">
+        <PropertyRef Name="MaSanPham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietDanhGiaNguoiMua_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="ChiTietDanhGiaNguoiMua" Type="Self.ChiTietDanhGiaNguoiMua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="ChiTietDanhGiaNguoiMua">
+        <PropertyRef Name="IDUserMua" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietGioHang_GioHang_DonHangMua1">
+    <End Role="GioHang_DonHangMua" Type="Self.GioHang_DonHangMua" Multiplicity="1" />
+    <End Role="ChiTietGioHang" Type="Self.ChiTietGioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GioHang_DonHangMua">
+        <PropertyRef Name="IDDonHangMua" />
+      </Principal>
+      <Dependent Role="ChiTietGioHang">
+        <PropertyRef Name="IDDonHangMua" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GioHang_DonHangMua_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="GioHang_DonHangMua" Type="Self.GioHang_DonHangMua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="GioHang_DonHangMua">
+        <PropertyRef Name="IDUserMua" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_TrangThaiUser">
+    <End Role="TrangThaiUser" Type="Self.TrangThaiUser" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TrangThaiUser">
+        <PropertyRef Name="IDTrangThaiUser" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="IDTrangThaiUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HTTT_DoanhNghiepEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BaiDangs" EntityType="Self.BaiDang" />
+    <EntitySet Name="ChiTietDanhGiaNguoiMuas" EntityType="Self.ChiTietDanhGiaNguoiMua" />
+    <EntitySet Name="ChiTietGioHangs" EntityType="Self.ChiTietGioHang" />
+    <EntitySet Name="GioHang_DonHangMua" EntityType="Self.GioHang_DonHangMua" />
+    <EntitySet Name="LoaiSanPhams" EntityType="Self.LoaiSanPham" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TrangThai_DonHangMua" EntityType="Self.TrangThai_DonHangMua" />
+    <EntitySet Name="TrangThaiBaiDangs" EntityType="Self.TrangThaiBaiDang" />
+    <EntitySet Name="TrangThaiUsers" EntityType="Self.TrangThaiUser" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_BaiDang_LoaiSanPham" Association="Self.FK_BaiDang_LoaiSanPham">
+      <End Role="LoaiSanPham" EntitySet="LoaiSanPhams" />
+      <End Role="BaiDang" EntitySet="BaiDangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BaiDang_TrangThaiBaiDang" Association="Self.FK_BaiDang_TrangThaiBaiDang">
+      <End Role="TrangThaiBaiDang" EntitySet="TrangThaiBaiDangs" />
+      <End Role="BaiDang" EntitySet="BaiDangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietGioHang_BaiDang" Association="Self.FK_ChiTietGioHang_BaiDang">
+      <End Role="BaiDang" EntitySet="BaiDangs" />
+      <End Role="ChiTietGioHang" EntitySet="ChiTietGioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietDanhGiaNguoiMua_User" Association="Self.FK_ChiTietDanhGiaNguoiMua_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ChiTietDanhGiaNguoiMua" EntitySet="ChiTietDanhGiaNguoiMuas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietGioHang_GioHang_DonHangMua1" Association="Self.FK_ChiTietGioHang_GioHang_DonHangMua1">
+      <End Role="GioHang_DonHangMua" EntitySet="GioHang_DonHangMua" />
+      <End Role="ChiTietGioHang" EntitySet="ChiTietGioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GioHang_DonHangMua_User" Association="Self.FK_GioHang_DonHangMua_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="GioHang_DonHangMua" EntitySet="GioHang_DonHangMua" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_TrangThaiUser" Association="Self.FK_User_TrangThaiUser">
+      <End Role="TrangThaiUser" EntitySet="TrangThaiUsers" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
