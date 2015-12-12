@@ -1,0 +1,307 @@
+﻿@using PagedList.Mvc
+
+@model PagedList.PagedList<Web_TMDT.Models.BaiDang>
+
+@{
+    ViewBag.Title = "QLBaiDang";
+    Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
+}
+
+<link href="~/Content/LayOutAdmin/Csstimkiem.css" rel="stylesheet" />
+@*<div class="ql">
+        <h2>Quản Lý Bài Đăng</h2>
+    </div>*@
+ @*Tìm Kiếm*@
+    <div id="txttimkiem">
+        @using (Html.BeginForm("TimQuanLyBaiDang", "Admin", FormMethod.Post))
+        {
+
+        <div id="tim">
+            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Tên Sản Phẩm..." })
+        </div>
+        <div class="day1">
+            <label class="tungay">Từ ngày</label>
+            <input type="date" name="tungay" />
+        </div>
+
+        <div class="day2">
+            <label class="denngay">Đến ngày</label>
+            <input type="date" name="denngay" />
+        </div>
+
+        <div id="buttontim">
+            <button type="submit"><img src="~/Hinh/search.png" /></button>
+        </div>  
+        }    
+        @using (Html.BeginForm("SapXepGiamdan", "Admin"))
+        {
+            <div id="buttontim">
+                <button id="aa" type="submit"><img src="~/Hinh/xu.png" /></button>
+            </div>
+        }
+    </div>
+
+
+
+
+<table class="table" border="1">
+    <tr class="qlbd">
+        <th width="70">
+            <label>Mã Sản Phẩm</label>
+        </th>
+
+        <th>
+            <label>Tên Sản Phẩm</label>
+        </th>
+
+
+        <th>
+            <label>Hình Ảnh</label>
+        </th>
+        <th>
+            <label>Ngày Đăng Tin</label>
+        </th>
+        <th>
+            <label>Điểm Đánh Giá</label>
+        </th>
+        <th width="50">
+            <label>SL Đăng</label>
+        </th>
+        <th width="50">
+            SL Tồn
+        </th>
+        <th width="80">
+           SL Bán
+        </th>
+        <th>
+            Trạng Thái
+        </th>
+        <th>Cập Nhật Số Lượng</th>
+        <th>Sửa Sản Phẩm</th>
+
+        <th>Thao Tác</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaSanPham)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSP)
+            </td>
+
+
+            <td>
+                <img src="@Url.Content("~/Hinh_anh/"+item.HinhAnh)" width="40" height="40" />
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.NgayDang)*@
+                @String.Format("{0:dd/MM/yyyy}", @item.NgayDang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DanhGia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soluongton)
+            </td>
+            @if(item.Soluongton != 0)
+            {
+                 Session["sl"] = @item.SoLuong - @item.Soluongton;
+                
+                <td>
+                    @Session["sl"]
+                </td>
+            }
+            else
+            {
+                <td>
+                     @item.SoLuong
+                </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThaiBaiDang.TenTrangThai)
+            </td>
+            <td>
+                @Html.ActionLink("Cập Nhật Số Lượng", "CapnhatSL", new { @id = item.MaSanPham })
+
+            </td>
+            <td>
+                @Html.ActionLink("Sửa Sản Phẩm", "SuaSP", new { @id = item.MaSanPham })
+
+            </td>
+            <td>
+                @Html.ActionLink("Cập Nhập Trạng Thái", "CapNhatTT", new { @id = item.MaSanPham })
+
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="thongke">
+    <br />
+    @using (@Html.BeginForm("XuatSanPhamBanChay", "Admin", FormMethod.Post))
+    {
+        <div id="them">
+            <input type="submit" id="themuser" value="Thống Kê Sản Phẩm Bán Chạy" />
+        </div>
+    }
+    @using (@Html.BeginForm("XuatSanPhamBanCham", "Admin", FormMethod.Post))
+    {
+        <div id="spcham">
+            <input type="submit" id="cham" value="Thống Kê Sản Phẩm Bán Chậm" />
+        </div>
+    }
+    @using (@Html.BeginForm("XuatSanPhamDanhGiaCao", "Admin", FormMethod.Post))
+    {
+        <div id="spcao">
+            <input type="submit" id="cao" value="Thống Kê Sản Phẩm Đánh Giá Cao" />
+        </div>
+    }
+    @using (@Html.BeginForm("XuatSanPhamDanhGiaThap", "Admin", FormMethod.Post))
+    {
+        <div id="spthap">
+            <input type="submit" id="thap" value="Thống Kê Sản Phẩm Đánh Giá Thấp" />
+        </div>
+    }
+</div>
+<br />
+@*tao trang lien ket*@
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    <div class="pt">
+        @Html.PagedListPager(Model, page => Url.Action("QLBaiDang", new { page }))
+    </div>
+    <style>
+      
+        .them {
+            background-color: #14a19a;
+            width: 240px;
+            color: white;
+            float: left;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        #themuser {
+            background-color: #14a19a;
+            width: auto;
+            height: 50px;
+            color: white;
+        }
+
+            #themuser:hover {
+                background-color: #3bb49a;
+            }
+
+        #spcham {
+            background-color: #14a19a;
+            color: white;
+            float: left;
+         
+            margin-left: 220px;
+            margin-top: -50px;
+        }
+
+        #cham {
+            background-color: #14a19a;
+            width: auto;
+            height: 50px;
+            color: white;
+        }
+
+            #cham:hover {
+                background-color: #3bb49a;
+            }
+        #spcao {
+            background-color: #14a19a;
+            color: white;
+            float: left;
+            width: 240px;
+            margin-left: 445px;
+            margin-top: -50px;
+        }
+
+        #cao {
+            background-color: #14a19a;
+            width: auto;
+            height: 50px;
+            color: white;
+        }
+
+            #cao:hover {
+                background-color: #3bb49a;
+            }
+        #spthap {
+            background-color: #14a19a;
+            color: white;
+            width: 240px;
+            float: left;
+            margin-left: 695px;
+            margin-top: -50px;
+        }
+
+        #thap {
+            background-color: #14a19a;
+            width: auto;
+            height: 50px;
+            color: white;
+        }
+
+            #thap:hover {
+                background-color: #3bb49a;
+            }
+        .qlbd {
+            background-color: #14a19a;
+            color: white;
+        }
+
+        .table {
+            background-color: #fafef7;
+        }
+
+        div.ql {
+            color: blue;
+        }
+
+        #txttimkiem {
+            margin-left: 0px;
+            margin-top: -35px;
+            width: 1038px;
+        }
+
+        .pt li {
+            display: inline;
+        }
+
+        #buttontim img {
+            margin-left: -2px;
+            margin-top: 5px;
+        }
+
+        #buttontim {
+            width: 10px;
+            height: 10px;
+            float: right;
+            margin-top: -30px;
+            margin-right: 160px;
+        }
+        #buttontim button#aa {
+            width: 0px;
+            height: 0px;
+            
+            float: right;
+            margin-top: 2px;
+            margin-right: -70px;
+        }
+        #buttontim button#aa img {
+                width: 35px;
+                height: 35px;
+                margin-left: -2px;
+                margin-top: 2px;
+            }
+    </style>

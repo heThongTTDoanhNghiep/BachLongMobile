@@ -1,0 +1,69 @@
+﻿@using (Html.BeginForm("KQTimDH", "BaiDang"))
+{
+    
+<div class="timTT">
+    <h5 class="qq">Tìm Ngày Lập Hóa Đơn:</h5>
+</div>
+<div class="day1"><input type="date" name="tungay" value="----Chọn Thời gian Bắt đầu------"  /></div>
+<div class="day2"><input type="date" name="denngay" value="----Chọn Thời Gian Kết Thúc-----" /></div>
+
+<div id="buttontim">
+    <button type="submit"><img src="~/Hinh/search.png" /></button>
+</div>
+}
+<style>
+    .qq {
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+        width: 210px;
+    }
+    .timTT{
+        margin-top: 20px;
+        color: black;
+    }
+    .timTT select#IDTrangThai {
+        width: 225px;
+        height: 34px;
+        margin-top: 12px;
+        background-color: #e0e6e1;
+    }
+
+    .timTT {
+        margin-left: 13px;
+        margin-top: 2%;
+        height: 20px;
+    }
+
+    .day1 input {
+        height: 32px;
+        width: 220px;
+    }
+    .day2 input {
+        height: 32px;
+        width: 210px;
+    }
+
+    .day2 {
+        margin-left: 485px;
+        margin-top: -33px;
+        width: 200px;
+    }
+    .day1 {
+        margin-left: 250px;
+        margin-top: -7px;
+        width: 200px;
+    }
+    #buttontim {
+        float: right;
+        margin-right: 3%;
+        margin-top:-25px;
+    }
+    #buttontim img {
+            position: relative;
+            top: -7px;
+        }
+
+   
+    
+</style>

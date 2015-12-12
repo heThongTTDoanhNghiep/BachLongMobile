@@ -1,0 +1,54 @@
+﻿.labeltext1{
+    float:left;
+}
+
+.form-group1 input{
+   height:0;
+   margin-left:5%;
+   background-color:#fcf9ec;
+
+}
+.labeltext2{
+    float:left;
+}
+.form-group2 input{
+    height:0;
+   margin-left:5%;
+    background-color:#fcf9ec;
+
+}
+.labeltext3{
+    float:left;
+}
+.form-group3 input{
+   height:0;
+   margin-left:10%;
+   background-color:#fcf9ec;
+}
+.labeltext4{
+    float:left;
+}
+.form-group4 textarea{
+  
+   margin-left:12%;
+    background-color:#fcf9ec;
+}
+.labeltext5{
+    float:left;
+}
+.form-group5 input{
+   height:0;
+   margin-left:18%;
+    background-color:#fcf9ec;
+}
+.labeltext6{
+    float:left;
+}
+.form-group6 input{
+    height:0;
+   margin-left:12%;
+}
+.bt a:hover{
+    text-decoration: none;
+    color:green;
+}

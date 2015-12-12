@@ -1,0 +1,123 @@
+﻿@using Web_TMDT.Models
+@model User
+@{
+    ViewBag.Title = "DoiMatKhau";
+    Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
+}
+<div>
+    <div class="Noidung">
+        <div id="aaa">
+            <div class="ii"></div>
+            <h2 class="tt">Đổi Mật Khẩu Người Dùng</h2>
+        </div>
+        @using (Html.BeginForm("DoiMatKhau", "Admin", FormMethod.Post))
+        {
+
+            <div class="cc">
+                <table class="sua">
+                    <tr>
+                        <td class="la" width="200">
+                            <label>Tên Người Dùng: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="ten" value="@Model.UserName" required="required">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="la" width="200">
+                            <label>Mật Khẩu Mới: </label>
+                        </td>
+                        <td>
+                            <input type="password" name="MatKhau"  required="required">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="la" width="200">
+                            <label>Nhập Lại Mật Khẩu: </label>
+                        </td>
+                        <td>
+                            <input type="password" name="NhapLaiMK" required="required">
+
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+
+            <div class="bt">
+                @*<input class="button-submit" type="submit" value="Cập Nhật" />*@
+                <button class="button-submit">Cập Nhật</button>
+            </div>
+        }
+    </div>
+</div>
+<style>
+    .ii {
+        height: 50px;
+    }
+
+    .cc {
+        margin-top: 20px;
+    }
+
+    #aaa {
+        background-color: #14a19a;
+        height: 55px;
+    }
+
+    .Noidung {
+        margin-left: 165px;
+        width: 470px;
+        background-color: #fafef7;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .la {
+        margin-left: 20px;
+    }
+
+    .sua input {
+        height: 0px;
+        width: 270px;
+        background: #f6f6f6;
+        border: 0;
+        font-family: "Open Sans", helvetica, arial, sans-serif;
+        padding: 1em 1.3em;
+        margin: 3px;
+        margin-left: -45px;
+        font-weight: 100;
+        font-size: 1em;
+    }
+
+    .sua input {
+        height: 10px;
+    }
+
+    .long {
+        width: 200px;
+    }
+
+    .mmm {
+        color: red;
+    }
+
+    .tt {
+        margin-left: 17px;
+        margin-bottom: 20px;
+        margin-top: -40px;
+        color: white;
+    }
+
+    .bt button {
+        color: white;
+        background-color: #14a19a;
+        margin-left: 155px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+
+
+

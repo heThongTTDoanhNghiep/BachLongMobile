@@ -1,0 +1,156 @@
+﻿@using Web_TMDT.Models;
+@model BaiDang
+@{
+    ViewBag.Title = "SuaSP";
+    Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
+}
+<div class="Noidung">
+    @*<div class="form-horizontal">*@
+    <div id="aaa">
+        <div class="ii"></div>
+        <h2 class="td">Sửa Sản Phẩm Đăng Tin</h2>
+    </div>
+    @Html.ValidationSummary(true)
+@using (Html.BeginForm("SuaSP", "Admin", FormMethod.Post))
+            {
+    <div class="body">
+        <br />
+        <div class="anh">
+            <img id="hinhanh" src="@Url.Content("~/Hinh_anh/"+@Model.HinhAnh)" />
+        </div>
+        @*<div class="hinh">
+            <input type="file" name="fileUpload" class="button-submit" />
+            @ViewBag.ThongBao
+        </div>*@
+        <div class="thongtin">
+            <div class="form-group">
+                <label>Tên Sản Phẩm:  </label>
+                <div class="col-md-10"><input type="text" name="tensp" value="@Model.TenSP "></div>
+            </div>
+            <div class="form-group">
+                <label> Loại Sản Phẩm:  </label>
+                <div class="col-md-10">
+                    @*<input type="text" name="loaisp" value="@Model.LoaiSanPham.TenLoai">*@
+                    @Html.DropDownList("Loai")
+                </div>
+            </div>
+            <div class="form-group">
+                <label> Giá Sản Phẩm:  </label>
+                <div class="col-md-10">
+                    <input type="text" name="giasp" value="@Model.GiaSP">
+                </div> 
+            </div>          
+            @*<div class="form-group">
+                <label> Số Lượng Đăng:  </label>
+                <div class="col-md-10">
+                    <input type="text" name="sld" value="@Model.SoLuong"  disabled >
+                </div>
+            </div>
+            <div class="form-group">
+                <label> Số Lượng Tồn:  </label>
+                <div class="col-md-10">
+                    <input type="text" name="sl" value="@Model.Soluongton" disabled>
+                </div>
+            </div>*@
+            <div class="form-group">
+                <label> Thông Tin Sản Phẩm:  </label>
+                <div class="col-md-10">
+                    <input type="text" name="mota" value="@Model.MoTa" >
+                </div>
+            </div>
+            <br />
+                <div>
+                    <div class="bt">
+                        <button class="button-submit"><h4>Sửa Sản Phẩm</h4></button>
+                    </div>
+                </div>
+            
+
+        </div>
+    </div>
+}
+</div>
+<style>
+    .col-md-10 Select#Loai {
+        height: 30px;
+        width: 240px;
+        border: 0;
+        background: #f6f6f6;
+        margin-top: -5px;
+        margin-left: 180px;
+        padding-left: 15px;
+    }
+    .hinh{
+        margin-left: 25px;
+    }
+    .col-md-10 input {
+        height: 30px;
+        width: 240px;
+        background: #f6f6f6;
+        border: 0;
+        font-family: "Open Sans", helvetica, arial, sans-serif;
+        margin-top: -15px;
+        margin-left: 180px;
+        font-weight: 100;
+        font-size: 1em;
+        padding: 1em 1.3em;
+    }
+    .col-md-10{
+        margin-top: -20px;
+    }
+     .lbcn {
+        margin-left: 0px;
+        width: 500px;
+    }
+
+    .ii {
+        height: 5px;
+    }
+
+    #aaa {
+        background-color: #14a19a;
+        height: 55px;
+    }
+
+    .td {
+        margin-left: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+
+    .Noidung {
+        margin-left: 105px;
+        width: 840px;
+        background-color: #fafef7;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .bt button {
+        margin-bottom: 75px;
+        color: white;
+        height: 65px;
+        margin-left: 15px;
+    }
+
+    .ttct {
+        background-color: #dfe1e1;
+        height: 400px;
+    }
+
+    .anh img {
+        margin-top: 10px;
+        height: 300px;
+        width: 300px;
+        margin-left: 3%;
+    }
+
+    .thongtin {
+        margin-left: 350px;
+        margin-top: -300px;
+    }
+</style>
+
+
+

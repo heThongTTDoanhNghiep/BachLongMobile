@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Web_TMDT.Models.ChiTietGioHang>
+
+@{
+    ViewBag.Title = "CTDHMua";
+    Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
+}
+<link href="~/Content/LayOutAdmin/Csstimkiem.css" rel="stylesheet" />
+<div class="ddd">
+    <h2>Chi Tiết Đơn Hàng Mua(Chi Tiết Giỏ Hàng)</h2>
+</div>
+
+<br />
+@using (Html.BeginForm("TimCTDHMua", "Admin"))
+{
+    @*Tìm Kiếm*@
+    <div id="txttimkiem">
+        <div id="tim">
+
+            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Tên Người Bán..." })
+        </div>
+        @*<div class="day1">
+            <label class="tungay">Từ ngày</label>
+            <input type="date" name="tungay" />
+        </div>
+
+        <div class="day2">
+            <label class="denngay">Đến ngày</label>
+            <input type="date" name="denngay" />
+        </div>*@
+
+        <div id="buttontim">
+            <button type="submit"><img src="~/Hinh/search.png" /></button>
+        </div>
+
+    </div>
+    <br />
+
+<table class="table" border="1">
+    <tr class="ttt">
+
+        <th>
+            <label>Mã Sản Phẩm</label>
+        </th>
+        <th>
+            <label>Số Lượng</label>
+        </th>
+        <th>
+            <label>Thành Tiền</label>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaSanPham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @string.Format("{0:0,0}", @item.ThanhTien) VNĐ
+            </td>
+
+        </tr>
+    }
+
+</table>
+}
+<style>
+    .ddd {
+        color: blue;
+        margin-left: 20%;
+    }
+
+    .ttt {
+        background-color: #14a19a;
+        color: white;
+    }
+</style>

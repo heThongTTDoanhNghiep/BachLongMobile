@@ -1,0 +1,34 @@
+﻿
+/*.spmoi{
+    margin-left:5%;
+}
+.spmoi img{
+    margin-left:15%;
+    height:90px;
+    width:90px;
+    float:left;
+}*/
+
+
+/*chi tiet sp*/
+.anh{
+    float:left;
+}
+.anh {
+    height:400px;
+    width:300px;
+}
+.anh img{
+    margin-left:2%;
+}
+.thongtin{
+    margin-left:40%;
+}
+.buttonmua{
+    margin-bottom:1%;
+}
+.buttonmua input{
+    background-color:#37c2b9;
+    height:30px;
+    width:100px;
+}

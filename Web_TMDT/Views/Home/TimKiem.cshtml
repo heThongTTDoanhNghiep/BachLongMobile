@@ -1,0 +1,84 @@
+﻿
+
+@using (Html.BeginForm("KQTim", "TimKiem"))
+{
+    @*<div class="timTT">
+    <h5 class="qq">Tìm Tên & Loại Sản Phẩm:</h5>
+    </div>*@
+    <div class="tu">
+        @Html.DropDownList("thang", "--Giá Từ--")
+    </div>
+    <div class="den">@Html.DropDownList("nam", "--Giá Đến--")</div>
+    <div id="tim">       
+        @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập từ khoá cần tìm..." })
+    </div>
+    <div class="loai">@Html.DropDownList("MaLoai","----Tất Cả Loại Sản Phẩm----")</div>
+    <div id="buttontim">
+       <button><img src="~/Hinh/search.png" /></button>
+    </div>
+}
+
+<style>
+    .tu select#thang {
+        width: 100px;
+        height: 34px;
+        /*margin-top: 12px;*/
+        margin-top: 15px;
+        background-color: #e0e6e1;
+    }
+
+    .tu {
+        margin-left: 265px;
+        
+        height: 20px;
+    }
+        .den select#nam {
+            width: 100px;
+            height: 34px;
+            margin-top: 5px;
+            background-color: #e0e6e1;
+        }
+
+    .den {
+        margin-left: 385px;
+        margin-top: -10px;
+        height: 20px;
+    }
+    .qq {
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+        width: 210px;
+    }
+    #tim input {
+        width: 185px;
+        float: left;
+        height: 0;
+        margin-top: -15px;
+        margin-left: 15px;
+    }
+    #buttontim {
+        float:right;
+        margin-right:3%;
+        margin-left: -290px;
+        margin-top: -5px;
+    }
+    #buttontim img{
+        position: relative;
+        top: -10px;
+    }
+   
+    .loai select#MaLoai {
+        width: 185px;
+        height: 34px;
+        margin-top: 12px;
+        background-color: #e0e6e1;
+    }
+    .loai {
+        margin-left: 505px;
+        margin-top: -3.5%;
+        height: 20px;
+    }
+</style>
+
+    
