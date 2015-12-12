@@ -20,7 +20,7 @@ namespace Web_TMDT.Controllers
         }
         public ActionResult SPMoi(int? page)
         {
-            int pageSize = 6;
+            int pageSize = 8;
             int pageNumber = (page ?? 1);
             var bd = (from s in db.BaiDangs
                      where s.IDTrangThai == 2 && s.Soluongton > 0
@@ -49,6 +49,17 @@ namespace Web_TMDT.Controllers
                       }).ToList();
 
             return View(sp);
+        }
+
+        public ActionResult SanPham(int? page)
+        {
+            int pageSize = 12;
+            int pageNumber = (page ?? 1);
+            var bd = (from s in db.BaiDangs
+                      where s.IDTrangThai == 2 && s.Soluongton > 0
+                      orderby s.GiaSP descending
+                      select s).ToList();
+            return View(bd.ToPagedList(pageNumber, pageSize));
         }
 	}
 }

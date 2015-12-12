@@ -7,11 +7,12 @@
     <link href="~/Content/LayOut/fonts.css" rel="stylesheet" />
     @*<link href="~/Content/LayOut/screen.css" rel="stylesheet" />*@
     <link href="~/Content/LayOut/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/LayOut/CssLayout.css" rel="stylesheet" />
     <link href="~/Content/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/Site.css" rel="stylesheet" />
     @*ChènQuảngCáo*@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/script.js"></script>
     <script src="~/NivoSlider/jquery.nivo.slider.js"></script>
     <script src="~/NivoSlider/jquery.nivo.slider.pack.js"></script>
     <link href="~/NivoSlider/nivo-slider.css" rel="stylesheet" />
@@ -20,67 +21,81 @@
     
 </head>
 <body>
-  
-    <section class="header">
-        <div class="container">
-            <div class="flash">
-                <div class="Dangkydangnhap">
-                    @if (Session["Name"] != null)
-                    {
-                        <div id="logo">
-                            <a href="~/SPMoi/SPMoi">
-                                <img src="~/Hinh/logo.png" />
+    <section class="headline">
+        <div class="container clearfix">            
+            <div class="user pull-right">
+                @if (Session["Name"] != null)
+                {
+                    <ul>
+                        <li class="gh">@Html.Action("GioHangPartial", "GioHang")</li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                @Session["Name"].ToString()<i class="fa fa-user fa-fw"></i>
+                                <span class="caret"></span>
                             </a>
-                        </div>
-                        <div id="menu">
-                            <ul>
-                                <li class="gh">@Html.Action("GioHangPartial", "GioHang")</li>
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        @Session["Name"].ToString()<i class="fa fa-user fa-fw"></i>
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="~/Users/SuaUser">Thông Tin cá nhân</a>
-                                        </li>
-                                        <li>
-                                            <a href="~/Users/MK">Đổi Mật Khẩu</a>
-                                        </li>
-                                        <li>
-                                            <a href="~/BaiDang/ThongTinMuaHang">Thông Tin Mua hàng</a>
-                                        </li>
-                                        <li>
-                                            @Html.ActionLink("Đăng Xuất", "Logout", "Users", null, htmlAttributes: new { @class = "Users" })
-                                        </li>
-                                    </ul>
-
-                                    <!-- /.dropdown-user -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="~/Users/SuaUser">Thông Tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a href="~/Users/MK">Đổi Mật Khẩu</a>
+                                </li>
+                                <li>
+                                    <a href="~/BaiDang/ThongTinMuaHang">Thông Tin Mua hàng</a>
+                                </li>
+                                <li>
+                                    @Html.ActionLink("Đăng Xuất", "Logout", "Users", null, htmlAttributes: new { @class = "Users" })
                                 </li>
                             </ul>
-                        </div>
 
-                    }
-                    else
-                    {
-                        <div id="bbb">
-                            <a href="~/SPMoi/SPMoi">
-                                <img src="~/Hinh/logo.png" />
-                            </a>
-                        </div>
-                        @Html.Action("GioHangPartial", "GioHang")
+                            <!-- /.dropdown-user -->
+                        </li>
+                    </ul>
 
-                        <b>
-                            <i class="fa fa-sign-in"></i>
-                            @Html.ActionLink("Đăng Ký", "Register", "Users", null, htmlAttributes: new { @class = "Users" })
-                        </b>
-                        <b>
-                            <i class="fa fa-unlock"></i>
-                            @Html.ActionLink("Đăng Nhập", "Login", "Users", null, htmlAttributes: new { @class = "Users" })
-                        </b>
-                    }
-                </div>
+                }
+                else
+                {                   
+                    
+                    <ul>
+                        <li>
+                            @Html.Action("GioHangPartial", "GioHang")
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Register", "Users")"><i class="fa fa-sign-in"></i> Đăng ký</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Login", "Users")"><i class="fa fa-unlock"></i> Đăng nhập</a>
+                        </li>
+                    </ul>
+                    
+                }
+            </div>
 
+        </div>
+    </section>
+
+    <section class="header">
+        <div class="container clearfix">
+            <div id="logo" class="pull-left">
+                <a href="/">
+                    <img src="~/Hinh/logo.png" />
+                </a>
+            </div>
+            <div class="navbar navbar-default pull-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("SanPham", "SPMoi")">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index", "Home")">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -121,26 +136,32 @@
     <section class="main">
         <div class="container">
             <div class="row">
-                <div class="col-md-3" id="menuLoai">
+                <div class="col-md-3">
                     <div class="activity">
                         @Html.Action("LoaiSPPartial", "Home")
                     </div>
                 </div>
-                <div class="col-md-9" id="noidung">
-                    <div id="txttimkiem">
+                <div class="col-md-9 main-content">
+                    <div id="search">
                         @Html.Action("TimKiem", "Home")
                     </div>
-                    @RenderBody()
+                    <div class="content">
+                        @RenderBody()
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="footer">
-        <div class="container">           
-                <i class="fa fa-phone"></i>: 08.35353508                
-               <div>273 An Dương Vương, Quận 5, TP.Hồ Chí Minh
-            </div>
-         
+        <div class="container">    
+            <address>
+                <p><i class="fa fa-phone"></i> Số điện thoại: 08.35353508</p>
+                <p><i class="fa fa-envelope"></i> Email: contact@sgu.edu.vn</p>
+                <p><i class="fa fa-map-marker"></i> 273 An Dương Vương, Quận 5, TP.Hồ Chí Minh</p>
+            </address>       
+                                
+               
+           
         </div>
     </section>
     

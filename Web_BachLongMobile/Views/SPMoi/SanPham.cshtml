@@ -1,16 +1,13 @@
-﻿
-@using Web_TMDT.Models;
+﻿@using Web_TMDT.Models;
 @using PagedList.Mvc;
 @model PagedList.PagedList<BaiDang>
 @{
-    ViewBag.Title = "SPtheo_loai";
+    ViewBag.Title = "SanPham";
     Layout = "~/Views/LayOut/LayOutNguoiDung.cshtml";
 }
-@if (Model.Count == 0)
-{
-    <h2>@ViewBag.sp</h2>
-}
-<h2>@ViewBag.ThongBao</h2>
+
+<h2>SanPham</h2>
+
 <div class="product-list">
     @{int n = 1;}
     @foreach (var item in Model)
@@ -20,7 +17,8 @@
             @:<div class="row">
         }
         <div class="col-md-3 item">
-            <div class="item-inner">                
+            <div class="item-inner">
+                
                 <div class="field image">
                     <a href="@Url.Action("CTSP", new { @masp=item.MaSanPham})"> <img src="@Url.Content("~/Hinh_anh/"+item.HinhAnh)" width="130" height="160" /> </a>
                 </div>
@@ -48,13 +46,9 @@
     }
 
 </div>
+
 @*tao trang lien ket*@
     Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
     <div class="pt">
-        @Html.PagedListPager(Model, page => Url.Action("SPtheo_loai", new { page, maloai = Request.QueryString["maloai"] }))
+        @Html.PagedListPager(Model, page => Url.Action("SPMoi", new { page = page }))
     </div>
-
-    
-
-
-

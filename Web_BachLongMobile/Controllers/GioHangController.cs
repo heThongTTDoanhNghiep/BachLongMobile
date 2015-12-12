@@ -135,10 +135,10 @@ namespace Web_TMDT.Controllers
         }
         public ActionResult GioHangPartial()
         {
-            if(tongsl()==0)
-            {
-                return PartialView();
-            }
+            ////if(tongsl()==0)
+            ////{
+            ////    return PartialView();
+            ////}
             ViewBag.tongsoluong = tongsl();
             ViewBag.tongtien = tongtien();
             return PartialView(); ;

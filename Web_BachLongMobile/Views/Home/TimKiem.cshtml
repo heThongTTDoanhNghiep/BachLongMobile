@@ -5,16 +5,16 @@
     @*<div class="timTT">
     <h5 class="qq">Tìm Tên & Loại Sản Phẩm:</h5>
     </div>*@
-    <div class="tu">
+    <div class="item">
         @Html.DropDownList("thang", "--Giá Từ--")
     </div>
-    <div class="den">@Html.DropDownList("nam", "--Giá Đến--")</div>
-    <div id="tim">       
+    <div class="item">@Html.DropDownList("nam", "--Giá Đến--")</div>
+    <div class="item">       
         @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập từ khoá cần tìm..." })
     </div>
-    <div class="loai">@Html.DropDownList("MaLoai", "----Tất Cả Loại Sản Phẩm----")</div>
-    <div id="buttontim">
-       <button><i class="fa fa-search"></i></button>
+    <div class="item">@Html.DropDownList("MaLoai", "----Tất Cả Hãng sản xuất----")</div>
+    <div class="item action">
+       <button class="btn-1">Tìm kiếm <i class="fa fa-search"></i></button>
     </div>
 }
 

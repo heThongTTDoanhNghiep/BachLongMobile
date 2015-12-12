@@ -247,6 +247,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\Site.css" />
     <Content Include="Content\DangKyDangNhap\bootstrap.min.css" />
     <Content Include="Content\DangKyDangNhap\font-awesome.min.css" />
     <Content Include="Content\DangKyDangNhap\metisMenu.min.css" />
@@ -279,7 +280,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Hinh\admin.jpg" />
     <Content Include="Hinh\d12.jpg" />
     <Content Include="Hinh\dt0.jpg" />
@@ -389,6 +389,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\script.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -453,6 +454,7 @@
     <Content Include="Views\Admin\SuaUser.cshtml" />
     <Content Include="Views\Admin\ThongKe_BaoCao.cshtml" />
     <Content Include="Views\Admin\DoiMatKhau.cshtml" />
+    <Content Include="Views\SPMoi\SanPham.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

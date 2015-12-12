@@ -132,6 +132,6 @@ I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\bin\ko\Microsoft.Expressi
 I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\bin\ru\Microsoft.Expression.Drawing.resources.dll
 I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\bin\zh-Hans\Microsoft.Expression.Drawing.resources.dll
 I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\bin\zh-Hant\Microsoft.Expression.Drawing.resources.dll
-I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\obj\Debug\BachLongMobile.csprojResolveAssemblyReference.cache
 I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\obj\Debug\Web_TMDT.dll
 I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\obj\Debug\Web_TMDT.pdb
+I:\Huynh Nhu\HTTT DN\BachLongMobile\Web_BachLongMobile\obj\Debug\BachLongMobile.csprojResolveAssemblyReference.cache
