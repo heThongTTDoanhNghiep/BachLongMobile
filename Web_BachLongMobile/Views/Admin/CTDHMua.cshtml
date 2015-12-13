@@ -6,11 +6,11 @@
     ViewBag.Title = "CTDHMua";
     Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
 }
-<link href="~/Content/LayOutAdmin/Csstimkiem.css" rel="stylesheet" />
-<br />
-<h3 class="aaaa">Chi Tiết Đơn Hàng</h3>
-<br/>
-<table class="table" border="1">
+
+
+<h2>Chi Tiết Đơn Hàng</h2>
+
+<table class="table">
     <tr class="ttt">
         <th>
             <label>Mã Đơn Hàng</label>
@@ -61,25 +61,3 @@
         @Html.PagedListPager(Model, page => Url.Action("CTDHMua", new { page = page }))
     </div>
 </div>
-<style>
-    .pt li {
-        display: inline;
-    }
-    .aaaa{
-        color: blue;
-    }
-    .ddd {
-        color: blue;
-        margin-left: 20%;
-    }
-    #buttontim{
-        float: left;
-        margin-left: 150px;
-        margin-top: 30px;
-    }
-    .ttt {
-        background-color: #14a19a;
-        color: white;
-    }
-
-</style>

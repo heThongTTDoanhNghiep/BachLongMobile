@@ -448,13 +448,97 @@ div#index {
   background-repeat: no-repeat;
 }
 
-/* line 402, ../sass/Site.scss */
+/* line 404, ../sass/Site.scss */
+#admin-page table thead th, #admin-page .table thead th {
+  white-space: inherit;
+}
+/* line 409, ../sass/Site.scss */
 #admin-page .navbar-static-top {
   padding-top: 0;
   background-color: #4397de;
   color: #fff;
 }
-/* line 407, ../sass/Site.scss */
-#admin-page .navbar > .container .navbar-brand {
+/* line 413, ../sass/Site.scss */
+#admin-page .navbar-static-top .container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 417, ../sass/Site.scss */
+#admin-page .navbar-static-top ul {
+  padding-left: 0;
+}
+/* line 419, ../sass/Site.scss */
+#admin-page .navbar-static-top ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 423, ../sass/Site.scss */
+#admin-page .navbar-static-top ul li a {
   color: #fff;
+  font-size: 16px;
+}
+/* line 426, ../sass/Site.scss */
+#admin-page .navbar-static-top ul li a:hover, #admin-page .navbar-static-top ul li a:focus {
+  color: #333;
+}
+/* line 433, ../sass/Site.scss */
+#admin-page .navbar-static-top .navbar-brand {
+  color: #fff;
+  font-size: 18px;
+}
+/* line 436, ../sass/Site.scss */
+#admin-page .navbar-static-top .navbar-brand:hover, #admin-page .navbar-static-top .navbar-brand:focus {
+  color: #333;
+}
+/* line 441, ../sass/Site.scss */
+#admin-page .main-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 446, ../sass/Site.scss */
+#admin-page .form-search {
+  margin-bottom: 30px;
+}
+/* line 448, ../sass/Site.scss */
+#admin-page .form-search label {
+  display: block;
+}
+/* line 451, ../sass/Site.scss */
+#admin-page .form-search .form-group {
+  margin-right: 15px;
+}
+/* line 453, ../sass/Site.scss */
+#admin-page .form-search .form-group:last-child {
+  margin-right: 0;
+}
+/* line 457, ../sass/Site.scss */
+#admin-page .form-search .form-action {
+  vertical-align: bottom;
+}
+/* line 460, ../sass/Site.scss */
+#admin-page .form-search .btn-1 {
+  padding: 6px 20px;
+}
+/* line 464, ../sass/Site.scss */
+#admin-page .form-search .sort-product {
+  margin-top: 25px;
+}
+/* line 469, ../sass/Site.scss */
+#admin-page .statistic {
+  margin-top: 30px;
+}
+/* line 471, ../sass/Site.scss */
+#admin-page .statistic form {
+  display: inline-block;
+}
+/* line 476, ../sass/Site.scss */
+#admin-page .login {
+  padding: 20px;
+}
+/* line 478, ../sass/Site.scss */
+#admin-page .login .title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #ff6d00;
 }

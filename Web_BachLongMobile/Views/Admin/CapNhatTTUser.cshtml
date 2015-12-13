@@ -7,91 +7,38 @@
 <div class="Noidung">
     @*<div class="form-horizontal">*@
     <div id="aaa">
-        <div class="ii"></div>
         <h2 class="td">Cập Nhật Trạng Thái User</h2>
     </div>
     @Html.ValidationSummary(true)
     <div class="body">
         <div class="thongtin">
-            <div class="col-md-10">
-                <h3 class="lbcn">Mã Người Dùng: @Model.IDUser</h3>
+            <div class="form-group">
+                <p class="lbcn">Mã Người Dùng: @Model.IDUser</p>
             </div>
-            <div class="col-md-10">
-                <h3 class="lbcn">Tên Người Dùng: @Model.UserName</h3>
+            <div class="form-group">
+                <p class="lbcn">Tên Người Dùng: @Model.UserName</p>
             </div>
-            <div class="col-md-10">
-                <h3 class="lbcn">Địa Chỉ: @Model.DiaChi</h3>
+            <div class="form-group">
+                <p class="lbcn">Địa Chỉ: @Model.DiaChi</p>
             </div>
-            <div class="col-md-10">
-                <h3 class="lbcn">Email: @Model.Mail</h3>
+            <div class="form-group">
+                <p class="lbcn">Email: @Model.Mail</p>
             </div>
-            <div class="col-md-10">
-                <h3 class="lbcn">Số Điện Thoại: @Model.SoDienThoai</h3>
+            <div class="form-group">
+                <p class="lbcn">Số Điện Thoại: @Model.SoDienThoai</p>
             </div>
             @using (Html.BeginForm("CapNhatTTUser", "Admin", FormMethod.Post, new { @id = Model.IDUser }))
             {
-                <div class="col-md-10">
-                    <h3 class="lbcn">Cập Nhật Trạng Thái: @Html.DropDownList("IDTrangThaiUser")</h3>
+                <div class="form-group">
+                    <p class="lbcn">Cập Nhật Trạng Thái: @Html.DropDownList("IDTrangThaiUser")</p>
                 </div>
                 <div class="bt">
-                    <button class="button-submit"><h4> Cập Nhật</h4></button>
+                    <button class="button-submit btn-1">Cập Nhật</button>
                 </div>
             }
 
         </div>
     </div>
 </div>
-<style>
-    .lbcn {
-        margin-left: -320px;
-        width: 500px;
-    }
 
-    .ii {
-        height: 5px;
-    }
-
-    #aaa {
-        background-color: #14a19a;
-        height: 55px;
-    }
-
-    .td {
-        margin-left: 30px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        color: #ffffff;
-    }
-
-    .Noidung {
-        margin-left: 175px;
-        width: 500px;
-        background-color: #fafef7;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .ttct {
-        background-color: #dfe1e1;
-        height: 400px;
-    }
-
-    .anh img {
-        height: 300px;
-        width: 300px;
-        margin-left: 3%;
-    }
-
-    .thongtin {
-        margin-left: 350px;
-    }
-
-    .bt button {
-        margin-top: 350px;
-        margin-bottom: 15px;
-        color: white;
-        margin-left: -430px;
-        height: 55px;
-    }
-</style>
 

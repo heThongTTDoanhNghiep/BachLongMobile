@@ -38,7 +38,7 @@
                                        
                                         <div class="form-group">
                                             @Html.LabelFor(model => model.UserName)
-                                            <div class="col-md-10">
+                                            <div class="col-md-8">
                                                 @Html.TextBoxFor(model => model.UserName, new {@class="textbox" })
                                                 @Html.ValidationMessageFor(model => model.UserName)
                                             </div>
@@ -46,7 +46,7 @@
                                         
                                         <div class="form-group">
                                             @Html.LabelFor(model => model.PassWord)
-                                            <div class="col-md-10">
+                                            <div class="col-md-8">
                                                 @Html.PasswordFor(model => model.PassWord, new { @class = "textbox" })
                                                 @Html.ValidationMessageFor(model => model.PassWord)
                                             </div>
@@ -54,7 +54,7 @@
                                        
 
                                         <div class="form-group1">
-                                            @*<div class="col-md-offset-2 col-md-10">
+                                            @*<div class="col-md-offset-2 col-md-8">
                                                 <input id="btdn" type="submit" value="Đăng Nhập" class="btn btn-default" />
                                             </div>*@
                                             <div class="bt">
@@ -89,7 +89,7 @@
         width: 250px;
         height: 45px;
     }
-    .col-md-10{
+    .col-md-8{
         margin-left: 140px;
         margin-top: -50px;
         width: 270px;  

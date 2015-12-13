@@ -4,40 +4,39 @@
 }
 <div id="index">
     <div class="chu">
-        <br />
-        <h2>Trang Admin BachLongMobile</h2>
-        <h2>Để có thể tham gia vào hệ thống...mời bạn đăng nhập!!!</h2>
-        <br />
-        <br />
+        
         @*<a href="~/Admin/Dangnhap">Đăng Nhập</a>*@
-        <div class="Noidung">
-            <div id="aaa">
-                <div class="ii"></div>
-                <h3 class="td">Đăng Nhập</h3>
-            </div>
-            @using (Html.BeginForm("Dangnhap", "Admin", FormMethod.Post))
-            {<div class="nd">
-                <div class="tb">@ViewBag.thongbao</div>
-                <div class="tk">
-                    <label>Tên Tài Khoản: </label>
-                    <input type="text" name="ten" class="form-control" required/>
+
+        
+        <div class="login">
+            
+            <h3 class="title col-md-offset-2">Đăng Nhập</h3>
+            @using (Html.BeginForm("Dangnhap", "Admin", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal" }))
+            {
+
+                <div class="form-group">
+                    <div class="text-danger col-md-8 col-md-offset-2">@ViewBag.thongbao</div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2">Tên Tài Khoản: </label>
+                    <div class ="col-md-8">
+                        <input type="text" name="ten" class="form-control" required />
+                    </div>
                 </div>
                 <br />
-                <div class="mk">
-                    <label>Mật Khẩu: </label>
-                    <input type="password" name="pass" class="form-control" required/>
+                <div class="form-group">
+                    <label class="col-md-2">Mật Khẩu: </label>
+                    <div class="col-md-8">
+                        <input type="password" name="pass" class="form-control" required />
+                    </div>
                 </div>
-                <div class="bt">
-                    <button class="button-submit">Đăng Nhập</button>
+                <div class="form-group form-action">
+                    <div class="col-md-8 col-md-offset-2">
+                        <button class="button-submit btn-1">Đăng Nhập</button>
+                    </div>
                 </div>
-            </div>
+            
             }
         </div>
-    </div>
-    <div class="anh2">
-        <img src="~/Hinh/admi.png" />
-    </div>
-    <div class="anh1">
-        <img src="~/Hinh/am.png" />
     </div>
 </div>
