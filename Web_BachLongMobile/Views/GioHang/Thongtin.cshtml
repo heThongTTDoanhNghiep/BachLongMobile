@@ -7,71 +7,42 @@
 }
 <h2 class="ccc">Hóa Đơn Thanh Toán</h2>
 
-<table id="divgiohang" border="1">
-    <tr class="thuoctinh">
+<table class="table">
+    <thead>
+        <tr class="thuoctinh">
 
-        <td width="250"><h5 class="aa">Tên Điện Thoại</h5></td>
+            <th width="250"><h5 class="aa">Tên Điện Thoại</h5></th>
 
-        <td width="100"><h5 class="aa">Hình Ảnh</h5></td>
+            <th width="100"><h5 class="aa">Hình Ảnh</h5></th>
 
-        <td width="160"><h5 class="aa">Đơn Giá</h5></td>
+            <th width="160"><h5 class="aa">Đơn Giá</h5></th>
 
-        <td width="100"><h5 class="aa">Số Lượng</h5></td>
+            <th width="100"><h5 class="aa">Số Lượng</h5></th>
 
-        <td width="200"><h5 class="aa">Thành Tiền</h5></td>
-    </tr>
+            <th width="200"><h5 class="aa">Thành Tiền</h5></th>
+        </tr>
+    </thead>
 
-    @foreach(var item in Model)
-    { 
-    <tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
 
-       <td><h5 class="bb">@item.tensp</h5></td>
+                <td><h5 class="bb">@item.tensp</h5></td>
 
-         <td><h5 class="bb"><img src="@Url.Content("~/Hinh_Anh/"+@item.hinhanh)" height="60" width="60" /></h5></td>
-         <td><h5 class="bb">@String.Format("{0:0,0}", @item.dongia) VNĐ</h5></td>
-        <td class="text"><h5 class="bb">@item.soluong</h5></td>
-        <td><h5 class="bb">@String.Format("{0:0,0}", @item.thanhtien) VNĐ</h5></td>
-    </tr>
-    }
-   
-</table>
-<div class="tongtien">
-    <h2> Tổng Tiền: @String.Format("{0:0,0}", @ViewBag.tongtien) VNĐ</h2>
-</div><style>
-    .ccc{
-        color: blue;
-        margin-top: -35px;
-        margin-left: 15px;
-    }
-    .aa {
-        color: white;
-        margin-left: 5px;
-        margin-top: 15px;
-    }
-
-    .bb {
-        margin-left: 5px;
-        margin-top: 5px;
-        color: black;
-    }
-    #divgiohang {
-        border: 0.5px solid #a4f1e5;
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-bottom: 2%;
-        
-    }
-
-        #divgiohang td {
-            border: 1px solid #000000;
+                <td><h5 class="bb"><img src="@Url.Content("~/Hinh_Anh/"+@item.hinhanh)" height="60" width="60" /></h5></td>
+                <td><h5 class="bb">@String.Format("{0:0,0}", @item.dongia) VNĐ</h5></td>
+                <td class="text"><h5 class="bb">@item.soluong</h5></td>
+                <td><h5 class="bb">@String.Format("{0:0,0}", @item.thanhtien) VNĐ</h5></td>
+            </tr>
         }
-    .thuoctinh {
-        background-color: #14a19a;
-        margin-left: 2%;
-        align-items: center;
-    }
-    .tongtien {
-        margin-left: 470px;
-    }
-</style>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Tổng tiền</td>
+            <td colspan="6" class="text-right">@String.Format("{0:0,0}", @ViewBag.tongtien) VNĐ</td>
+        </tr>
+    </tfoot>
+</table>
+
 

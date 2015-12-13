@@ -12,7 +12,7 @@
         <h2>Quản Lý Bài Đăng</h2>
     </div>*@
  @*Tìm Kiếm*@
-    <div id="txttimkiem">
+    <div class="form-search">
         @using (Html.BeginForm("TimQuanLyBaiDang", "Admin", FormMethod.Post))
         {
 
@@ -30,13 +30,13 @@
         </div>
 
         <div id="buttontim">
-            <button type="submit"><img src="~/Hinh/search.png" /></button>
+            <button type="submit"><i class="fa fa-search"></i></button>
         </div>  
         }    
         @using (Html.BeginForm("SapXepGiamdan", "Admin"))
         {
             <div id="buttontim">
-                <button id="aa" type="submit"><img src="~/Hinh/xu.png" /></button>
+                <button id="aa" type="submit"><i class="fa fa-caret-down"></i></button>
             </div>
         }
     </div>
@@ -44,7 +44,7 @@
 
 
 
-<table class="table" border="1">
+<table class="table">
     <tr class="qlbd">
         <th width="70">
             <label>Mã Sản Phẩm</label>
@@ -176,132 +176,4 @@
     <div class="pt">
         @Html.PagedListPager(Model, page => Url.Action("QLBaiDang", new { page }))
     </div>
-    <style>
-      
-        .them {
-            background-color: #14a19a;
-            width: 240px;
-            color: white;
-            float: left;
-            margin-left: 50px;
-            margin-top: 30px;
-        }
-
-        #themuser {
-            background-color: #14a19a;
-            width: auto;
-            height: 50px;
-            color: white;
-        }
-
-            #themuser:hover {
-                background-color: #3bb49a;
-            }
-
-        #spcham {
-            background-color: #14a19a;
-            color: white;
-            float: left;
-         
-            margin-left: 220px;
-            margin-top: -50px;
-        }
-
-        #cham {
-            background-color: #14a19a;
-            width: auto;
-            height: 50px;
-            color: white;
-        }
-
-            #cham:hover {
-                background-color: #3bb49a;
-            }
-        #spcao {
-            background-color: #14a19a;
-            color: white;
-            float: left;
-            width: 240px;
-            margin-left: 445px;
-            margin-top: -50px;
-        }
-
-        #cao {
-            background-color: #14a19a;
-            width: auto;
-            height: 50px;
-            color: white;
-        }
-
-            #cao:hover {
-                background-color: #3bb49a;
-            }
-        #spthap {
-            background-color: #14a19a;
-            color: white;
-            width: 240px;
-            float: left;
-            margin-left: 695px;
-            margin-top: -50px;
-        }
-
-        #thap {
-            background-color: #14a19a;
-            width: auto;
-            height: 50px;
-            color: white;
-        }
-
-            #thap:hover {
-                background-color: #3bb49a;
-            }
-        .qlbd {
-            background-color: #14a19a;
-            color: white;
-        }
-
-        .table {
-            background-color: #fafef7;
-        }
-
-        div.ql {
-            color: blue;
-        }
-
-        #txttimkiem {
-            margin-left: 0px;
-            margin-top: -35px;
-            width: 1038px;
-        }
-
-        .pt li {
-            display: inline;
-        }
-
-        #buttontim img {
-            margin-left: -2px;
-            margin-top: 5px;
-        }
-
-        #buttontim {
-            width: 10px;
-            height: 10px;
-            float: right;
-            margin-top: -30px;
-            margin-right: 160px;
-        }
-        #buttontim button#aa {
-            width: 0px;
-            height: 0px;
-            
-            float: right;
-            margin-top: 2px;
-            margin-right: -70px;
-        }
-        #buttontim button#aa img {
-                width: 35px;
-                height: 35px;
-                margin-left: -2px;
-                margin-top: 2px;
-            }
-    </style>
+    

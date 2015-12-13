@@ -343,13 +343,32 @@ img{
   }
 }
 
-table{
+table, .table{
   thead{
     th{
       white-space: nowrap;
     }
   }
-  td{
-    vertical-align: middle;
+  > tbody{
+    > tr{
+      > td{
+        vertical-align: middle;
+      }
+    }
   }
+  tfoot{
+    tr{
+      font-size: 18px;
+      color: #ff6d00;
+    }
+  }
+}
+
+div#index{
+  width: auto;
+  margin-left: 0;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-image: url('../../Hinh/bgam1.jpg');
+  background-repeat: none;
 }

@@ -391,10 +391,25 @@ img {
 }
 
 /* line 348, ../sass/Site.scss */
-table thead th {
+table thead th, .table thead th {
   white-space: nowrap;
 }
-/* line 352, ../sass/Site.scss */
-table td {
+/* line 354, ../sass/Site.scss */
+table > tbody > tr > td, .table > tbody > tr > td {
   vertical-align: middle;
+}
+/* line 360, ../sass/Site.scss */
+table tfoot tr, .table tfoot tr {
+  font-size: 18px;
+  color: #ff6d00;
+}
+
+/* line 367, ../sass/Site.scss */
+div#index {
+  width: auto;
+  margin-left: 0;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../../Hinh/bgam1.jpg");
+  background-repeat: none;
 }

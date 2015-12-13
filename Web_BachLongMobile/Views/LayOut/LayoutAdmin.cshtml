@@ -13,15 +13,13 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
     <!-- Bootstrap Core CSS -->
     <link href="~/Content/LayOut/fonts.css" rel="stylesheet" />
-    <link href="~/Content/LayOut/screen.css" rel="stylesheet" />
     <link href="~/Content/LayOut/CssLayOut.css" rel="stylesheet" />
-    <link href="~/Content/LayOutAdmin/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/LayOutAdmin/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/LayOutAdmin/metisMenu.min.css" rel="stylesheet" />
-    <link href="~/Content/LayOutAdmin/morris.css" rel="stylesheet" />
-    <link href="~/Content/LayOutAdmin/sb-admin-2.css" rel="stylesheet" />
-    <link href="~/Content/LayOutAdmin/timeline.css" rel="stylesheet" />
-    <link href="~/Content/LayOutAdmin/csslayoutadmin.css" rel="stylesheet" />
+    <link href="~/Content/css/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -29,60 +27,62 @@
     <![endif]-->
 </head>
 <body>
-    <div id="wrapper">
+    <div id="page">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" id="menungang" role="navigation" style="margin-bottom: 0">
            
+            <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="~/Admin/Index"><img src="~/Hinh/admin.jpg" /></a>
+                    <a class="navbar-brand" href="~/Admin/Index">Trang quản lý</a>
                 </div>
+            </div>
                
                 <!-- /.navbar-header -->
                 <!-- /.navbar-top-links -->
            
-                <div class="navbar-default sidebar" id="theli" role="navigation">
-                    <div class="sidebar-nav navbar-collapse">
-                        <ul class="nav" id="side-menu">
-                            <li>
-                                <a href="~/BaiDang/BaiDang"><i class="fa fa-dashboard fa-fw"></i>Đăng Tin Sản Phẩm</a>
-                            </li>
-
-                            <li>
-                                <a href="~/Admin/QLBaiDang"><i class="fa fa-dashboard fa-fw"></i>Quản Lý Sản Phẩm</a>
-                            </li>
-
-                            <li>
-                                <a href="~/Admin/QLUser"><i class="fa fa-table fa-fw"></i>Quản Lý User</a>
-                            </li>
-                            @*<li>
-                                <a href="~/Admin/DHMua"><i class="fa fa-edit fa-fw"></i> Thông Tin Đơn Hàng Mua</a>
-                            </li>*@
-                            <li>
-                                <a href="~/Admin/DHMua"><i class="fa fa-table fa-fw"></i>Thống Kê Đơn Hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.sidebar-collapse -->
-                </div>
+                
                
             
                 <!-- /.navbar-static-side -->
             </nav>
-        <div id="page-wrapper">
-            @RenderBody()
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 navbar-default sidebar" role="navigation">
+                        <div class="sidebar-nav navbar-collapse">
+                            <ul class="nav" id="side-menu">
+                                <li>
+                                    <a href="~/BaiDang/BaiDang"><i class="fa fa-dashboard fa-fw"></i>Đăng Tin Sản Phẩm</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/Admin/QLBaiDang"><i class="fa fa-dashboard fa-fw"></i>Quản Lý Sản Phẩm</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/Admin/QLUser"><i class="fa fa-table fa-fw"></i>Quản Lý User</a>
+                                </li>
+                                @*<li>
+                            <a href="~/Admin/DHMua"><i class="fa fa-edit fa-fw"></i> Thông Tin Đơn Hàng Mua</a>
+                        </li>*@
+                                <li>
+                                    <a href="~/Admin/DHMua"><i class="fa fa-table fa-fw"></i>Thống Kê Đơn Hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.sidebar-collapse -->
+                    </div>
+                    <div class="col-md-9 content">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
         </div>
        
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
 
-    <script src="~/Scripts/LayoutAdmin/bootstrap.min.js"></script>
-    <script src="~/Scripts/LayoutAdmin/jquery.min.js"></script>
-    <script src="~/Scripts/LayoutAdmin/metisMenu.min.js"></script>
-    <script src="~/Scripts/LayoutAdmin/morris-data.js"></script>
-    <script src="~/Scripts/LayoutAdmin/morris.min.js"></script>
-    <script src="~/Scripts/LayoutAdmin/raphael-min.js"></script>
-    <script src="~/Scripts/LayoutAdmin/sb-admin-2.js"></script>
 
 </body>
 </html>

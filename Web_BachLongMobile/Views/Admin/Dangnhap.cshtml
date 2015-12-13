@@ -20,12 +20,12 @@
                 <div class="tb">@ViewBag.thongbao</div>
                 <div class="tk">
                     <label>Tên Tài Khoản: </label>
-                    <input type="text" name="ten" />
+                    <input type="text" name="ten" class="form-control" required/>
                 </div>
                 <br />
                 <div class="mk">
                     <label>Mật Khẩu: </label>
-                    <input type="password" name="pass" />
+                    <input type="password" name="pass" class="form-control" required/>
                 </div>
                 <div class="bt">
                     <button class="button-submit">Đăng Nhập</button>
@@ -41,99 +41,3 @@
         <img src="~/Hinh/am.png" />
     </div>
 </div>
-
-<style>
-    div#index {
-        margin-left: -30px;
-        width: 1200px;
-        background-image: url('../../Hinh/bgam1.jpg');
-    }
-
-    .chu {
-        margin-left: 5%;
-        width: 500px;
-        color: black;
-    }
-
-    .anh1 img {
-        margin-left: 500px;
-        width: 550px;
-        height: 400px;
-        margin-top: -340px;
-    }
-
-    .anh2 img {
-        margin-left: 530px;
-        width: 500px;
-        height: 200px;
-        margin-top: -820px;
-    }
-
-    .chu a:hover {
-        color: red;
-    }
-
-    .nd {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .ii {
-        height: 1px;
-    }
-
-    #aaa {
-        background-color: #14a19a;
-        height: 40px;
-    }
-
-    .td {
-        margin-left: 30px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        color: #ffffff;
-    }
-
-    .bt button {
-        margin-left: 140px;
-        width: 160px;
-        height: 45px;
-        background-color: #14a19a;
-        margin-top: 15px;
-        color: white;
-        margin-bottom: 15px;
-    }
-
-    .Noidung {
-        /*margin-left: 185px;*/
-        width: 400px;
-        background-color: #e6e6e6;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .tb {
-        margin-left: 3%;
-        color: red;
-    }
-
-    .tk {
-        margin-left: 1%;
-    }
-
-    .mk {
-        margin-left: 1%;
-    }
-
-    .tk input {
-        width: 230px;
-        height: 45px;
-        margin-left: 10px;
-    }
-
-    .mk input {
-        width: 230px;
-        height: 45px;
-        margin-left: 45px;
-    }
-</style>
