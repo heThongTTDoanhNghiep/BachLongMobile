@@ -4,7 +4,6 @@
     ViewBag.Title = "TTNguoiBan";
     Layout = "~/Views/LayOut/LayOutNguoiDung.cshtml";
 }
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/DanhGia/Rating.js"></script>
 
 <link href="~/Content/LoaiSP/SPMoi.css" rel="stylesheet" />
@@ -145,6 +144,16 @@
                             </ul>
                         </div>
                     }
+                </div>
+                <div class="rate-product">
+                    <h5>Đánh Giá:</h5>
+                    <ul>
+                        <li><a class="class1" href="@Url.Action("Score", "BaiDang", new { @diem = 2, @masp = item.MaSP })" data-toggle="tooltip" title="2/10"></a></li>
+                        <li><a class="class2" href="@Url.Action("Score", "BaiDang", new { @diem = 4, @masp = item.MaSP })" data-toggle="tooltip" title="4/10"></a></li>
+                        <li><a class="class3" href="@Url.Action("Score", "BaiDang", new { @diem = 6, @masp = item.MaSP })" data-toggle="tooltip" title="6/10"></a></li>
+                        <li><a class="class4" href="@Url.Action("Score", "BaiDang", new { @diem = 8, @masp = item.MaSP })" data-toggle="tooltip" title="8/10"></a></li>
+                        <li><a class="class5" href="@Url.Action("Score", "BaiDang", new { @diem = 10, @masp = item.MaSP})" data-toggle="tooltip" title="10/10"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
