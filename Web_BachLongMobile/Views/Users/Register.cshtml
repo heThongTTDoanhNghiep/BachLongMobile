@@ -13,9 +13,9 @@
     <div class="panel-body">
         <div class="panel-body">
 
-            @using (Html.BeginForm("Register", "Users", FormMethod.Post))
+            @using (Html.BeginForm("Register", "Users", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal"}))
             {
-                <form role="form">
+                
                     <fieldset>
                         @Html.AntiForgeryToken()
 
@@ -28,82 +28,67 @@
                         <div class="form-group">
                             @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.TextBoxFor(model => model.Username, htmlAttributes: new { @requied = "requied" })
+                                @Html.TextBoxFor(model => model.Username, htmlAttributes: new { @requied = "requied", @class="form-control" })
                                 @Html.ValidationMessageFor(model => model.Username)
                             </div>
                         </div>
 
-                        <br />
-
                         <div class="form-group">
                             @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10" id="confirm_pass">
-                                @Html.PasswordFor(model => model.Password, htmlAttributes: new { @requied = "requied" })
+                                @Html.PasswordFor(model => model.Password, htmlAttributes: new { @requied = "requied", @class = "form-control" })
                                 @Html.ValidationMessageFor(model => model.Password)
                             </div>
                         </div>
 
-                        <br />
-
                         <div class="form-group">
                             @Html.LabelFor(model => model.ConfirmPassword, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.PasswordFor(model => model.ConfirmPassword, htmlAttributes: new { @requied = "requied" })
+                                @Html.PasswordFor(model => model.ConfirmPassword, htmlAttributes: new { @requied = "requied", @class = "form-control" })
                                 @Html.ValidationMessageFor(model => model.ConfirmPassword)
 
 
                             </div>
                         </div>
 
-                        <br />
-
                         <div class="form-group">
                             @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.TextBoxFor(model => model.DiaChi)
+                                @Html.TextBoxFor(model => model.DiaChi, htmlAttributes: new { @requied = "requied", @class = "form-control" })
 
                             </div>
                         </div>
-
-                        <br />
 
                         <div class="form-group">
                             @Html.LabelFor(model => model.Mail, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.TextBoxFor(model => model.Mail, htmlAttributes: new { @requied = "requied" })
+                                @Html.TextBoxFor(model => model.Mail, htmlAttributes: new { @requied = "requied", @class = "form-control" })
                                 @Html.ValidationMessageFor(model => model.Mail)
                             </div>
                         </div>
 
-                        <br />
-
                         <div class="form-group">
                             @Html.LabelFor(model => model.Sdt, htmlAttributes: new { @class = "control-label col-md-2" })
                             <div class="col-md-10">
-                                @Html.TextBoxFor(model => model.Sdt, htmlAttributes: new { @requied = "requied", @onkeypress = "return keyPhone(event);" })
+                                @Html.TextBoxFor(model => model.Sdt, htmlAttributes: new { @requied = "requied", @onkeypress = "return keyPhone(event);", @class = "form-control" })
                                 @Html.ValidationMessageFor(model => model.Sdt)
                             </div>
                         </div>
 
-                        <br />
-
                         <div class="form-group">
-                            <div class="bt">
+                            <div class="col-md-10 col-md-offset-2">
                                 @*<input id="dk" type="submit" value="Đăng Ký" />*@
-                                <button class="button-submit">Đăng Ký</button>
+                                <button class="button-submit btn-1">Đăng Ký</button>
                             </div>
                         </div>
-
-                        <br />
-                        <div class="form-group1">
-                            Bạn đã có tài khoản?
-                            <div class="ttt">
-                                <a href="~/Users/Login">Đăng Nhập</a>
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-2">
+                                <p>Bạn đã có tài khoản?</p>
+                                <a href="~/Users/Login" class="btn btn-1">Đăng Nhập</a>
                             </div>
                         </div>
 
                     </fieldset>
-                </form>
             }
 
         </div>

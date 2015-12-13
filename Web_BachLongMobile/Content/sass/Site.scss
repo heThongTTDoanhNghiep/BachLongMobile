@@ -1,3 +1,5 @@
+$blue: #4397de;
+
 @mixin border-radius($val){
   -webkit-border-radius: $val;
   -moz-border-radius: $val;
@@ -28,7 +30,24 @@
   font-weight: normal;
 }
 
-$blue: #4397de;
+@mixin btn-1{
+  @include border-radius(5px);
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  background-color: $blue;
+  border: 1px solid $blue;
+  @include transition(0.3s);
+  &:hover, &:focus{
+    background-color: #666;
+    border-color: #666;
+    color: #fff;
+  }
+}
+
+.btn-1{
+  @include btn-1;
+}
 
 body{
   font-family: 'Arial';
@@ -63,6 +82,11 @@ input[type=text]{
   padding: 9px;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 .field{
   margin-bottom: 10px;
 }
@@ -91,15 +115,15 @@ input[type=text]{
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  ul{
+  ul.menu{
     padding-left: 0;
     margin-bottom: 0;
-    li{
+    > li{
       list-style: none;
       display: inline-block;
       margin-left: 15px;
       margin-bottom: 0;
-      a{
+      > a{
         color: #fff;
         &:hover, &:focus{
           color: #333;
@@ -232,12 +256,14 @@ input[type=text]{
     padding: 15px;
     border: 1px solid transparent;
     @include transition(0.3s);
+    min-height: 340px;
     &:hover, &:focus{
       border-color: #ddddcc;
     }
   }
   .image{
     text-align: center;
+    min-height: 175px;
   }
   .title{
     font-size: 16px;
@@ -282,5 +308,48 @@ input[type=text]{
         margin-bottom: 0;
       }
     }
+  }
+}
+
+.product-detail{
+  .price{
+    color: #ff6d00;
+    font-size: 16px;
+  }
+  .button-submit{
+    @include btn-1;
+    padding-right: 15px;
+    i{
+      font-size: 18px;
+    }
+  }
+  .rating{
+    ul{
+      @include clearfix;
+      padding-left: 0;
+      margin-bottom: 0;
+      li{
+        float: left;
+        width: 25px;
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .btn-1{
+    padding: 10px 25px;
+  }
+}
+
+table{
+  thead{
+    th{
+      white-space: nowrap;
+    }
+  }
+  td{
+    vertical-align: middle;
   }
 }

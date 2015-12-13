@@ -4,14 +4,14 @@
 
 @{
     ViewBag.Title = "ThongTinMuaHang";
-    Layout = "~/Views/LayOut/LayOutThongTin.cshtml";
+    Layout = "~/Views/LayOut/LayOutNguoiDung.cshtml";
 }
 @using (Html.BeginForm("ThongTinDonHang", "BaiDang"))
 { 
     
-<h3 class="nguoimua">Người Mua: @Session["Name"]</h3>
-<h3 class="nguoimua">Số Đơn Hàng: @ViewBag.sl</h3>
-<table id="divgiohang" border="1">
+<h3>Người Mua: @Session["Name"]</h3>
+<p>Số Đơn Hàng: @ViewBag.sl</p>
+<table class="table">
     <tr class="thuoctinh">
 
         <td width="130"><h5 class="aa">Mã Đơn Hàng</h5></td>
@@ -51,51 +51,3 @@
         </div>
     </div>
 }
-
-
-<style>
-    .pt li {
-        margin-left: 5px;
-        display: inline;
-    }
-    .aa{
-        color: white;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-    .bb {
-        margin-left: 10px;
-        margin-top: 5px;
-        color: black;
-    }
-
-    .mmm{
-        color: blue;
-    }
-    .mmm a:hover{
-        color: yellow;
-    }
-    .nguoimua {
-        margin-top: -10px;
-        margin-left: 15px;
-        color: black;
-    }
-    #divgiohang {
-        border: 0.5px solid #a4f1e5;
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-bottom: 2%;
-        margin-top: 10px;
-    }
-
-    #divgiohang td {
-        border: 1px solid #000000;
-    }
-
-    .thuoctinh {
-        background-color: #14a19a;
-        margin-left: 2%;
-        align-items: center;
-        
-    }
-</style>

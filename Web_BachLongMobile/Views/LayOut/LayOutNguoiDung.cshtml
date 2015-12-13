@@ -26,11 +26,10 @@
             <div class="user pull-right">
                 @if (Session["Name"] != null)
                 {
-                    <ul>
-                        <li class="gh">@Html.Action("GioHangPartial", "GioHang")</li>
+                    <ul class="menu">
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                @Session["Name"].ToString()<i class="fa fa-user fa-fw"></i>
+                                <i class="fa fa-user fa-fw"></i> @Session["Name"].ToString()
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
@@ -50,13 +49,14 @@
 
                             <!-- /.dropdown-user -->
                         </li>
+                        <li>@Html.Action("GioHangPartial", "GioHang")</li>                        
                     </ul>
 
                 }
                 else
                 {                   
                     
-                    <ul>
+                    <ul class="menu">
                         <li>
                             @Html.Action("GioHangPartial", "GioHang")
                         </li>

@@ -124,7 +124,7 @@ namespace Web_TMDT.Controllers
             @ViewBag.tim = tim;
             @ViewBag.loai = loai;
 
-            int pageSize = 6;
+            int pageSize = 8;
             int pageNumber = (page ?? 1);
 
             List<BaiDang> KQTimKiem = new List<BaiDang>();

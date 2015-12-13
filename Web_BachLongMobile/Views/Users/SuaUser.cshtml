@@ -6,53 +6,52 @@
     Layout = "~/Views/LayOut/LayOutNguoiDung.cshtml";
 }
 <div class="Noidung">
-    <div id="aaa">
-        <div class="ii"></div>
-        <h2 class="tt">Thông Tin Cá Nhân</h2>
-    </div>
-    @using (Html.BeginForm("SuaUser", "Users", FormMethod.Post))
+    <h2 class="tt">Thông Tin Cá Nhân</h2>
+    @using (Html.BeginForm("SuaUser", "Users", FormMethod.Post, htmlAttributes: new { @class = "form-horizontal" }))
     {
-
-    <div class="cc">
-        <table class="sua">
-            <tr>
-                <td class="la" width="200">
-                    <label>Tên User: </label>
-                </td>
-                <td>
-                    <input type="text" name="ten" value="@Model.UserName" required="required">
-                </td>
-            </tr>
-            <tr>
-                <td class="la" width="200">
-                    <label>Địa Chỉ: </label>
-                </td>
-                <td>
-                    <input type="text" name="diachi" value="@Model.DiaChi" required="required">
-
-                </td>
-            </tr>
-            <tr>
-                <td class="la" width="200">
-                    <label>Email: </label>
-                </td>
-                <td>
-                    <input type="email" name="mail" pattern="^[a-zA-Z0-9._+-]+@("@")[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" value="@Model.Mail " required="required">
-                </td>
-            </tr>
-            <tr>
-                <td class="la" width="200">
-                    <label>Số Điện Thoại: </label>
-                </td>
-
-                <td>
-
-                    <input type="text" name="sdt" onkeypress="return keyPhone(event);" size="10" maxlength="11" onkeyup="this.value = minmax(this.value, 10, 11)" value="@Model.SoDienThoai" pattern="^-*0+\d{9,10}" required="required">
-                </td>
-
-            </tr>
-        </table>
+        
+    <div class="form-group">
+        <div class="col-md-2">
+            <label>Tên User: </label>
+        </div>
+        <div class="col-md-10">
+            <input class="form-control" type="text" name="ten" value="@Model.UserName" required="required">
+        </div>
     </div>
+        
+    <div class="form-group">
+        <div class="col-md-2">
+            <label>Địa Chỉ: </label>
+        </div>
+        <div class="col-md-10">
+            <input class="form-control" type="text" name="diachi" value="@Model.DiaChi" required="required">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-2">
+            <label>Email: </label>
+        </div>
+        <div class="col-md-10">
+            <input class="form-control" type="email" name="mail" pattern="^[a-zA-Z0-9._+-]+@("@")[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" value="@Model.Mail " required="required">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-2">
+            <label>Số Điện Thoại: </label>
+        </div>
+        <div class="col-md-10">
+            <input class="form-control" type="text" name="sdt" onkeypress="return keyPhone(event);" size="10" maxlength="11" onkeyup="this.value = minmax(this.value, 10, 11)" value="@Model.SoDienThoai" pattern="^-*0+\d{9,10}" required="required">
+        </div>
+    </div>
+    <div class="form-group">
+        @*<input class="button-submit" type="submit" value="Cập Nhật" />*@
+        <div class="col-md-10 col-md-offset-2">
+            <button class="button-submit btn-1">Cập Nhật</button>
+        </div>
+    </div>
+
         <script>
             function keyPhone(e) {
                 var keyword = null;
@@ -73,66 +72,6 @@
         </script>
 
 
-        <div class="bt">
-            @*<input class="button-submit" type="submit" value="Cập Nhật" />*@
-            <button class="button-submit">Cập Nhật</button>
-        </div>
-    }
-</div>
-<style>
-    .ii {
-        height: 50px;
-    }
-    .cc {
-        margin-top: 20px;
-    }
-    #aaa {
-        background-color: #14a19a;
-        height: 55px;
-
-    }
-    .Noidung{
-        margin-left: 165px;
-        width: 500px;
-        background-color: #ffffff;
-        margin-bottom: 20px;
-        margin-top: -40px;
-    }
-    .la{
-        margin-left: 20px;
-    }
-
-     .sua input {
-        height: 0px;
-        width: 270px;
-        background: #f6f6f6;
-        border: 0;
-        font-family: "Open Sans", helvetica, arial, sans-serif;
-        padding: 1em 1.3em;
-        margin: 3px;
-        margin-left: -45px;
-        font-weight: 100;
-        font-size: 1em;
-    }
-    .sua input{
-        height:10px;
-    }
-    .long{
-        width:200px;
-    }
-    .mmm{
-        color: red;
         
     }
-    .tt {
-        margin-left: 17px;
-        margin-bottom: 20px;
-        margin-top: -40px;
-        color: white;
-    }
-    .bt button {
-        margin-left: 155px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-</style>
+</div>
