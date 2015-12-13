@@ -411,5 +411,5 @@ div#index {
   -webkit-background-size: 100%;
   background-size: 100%;
   background-image: url("../../Hinh/bgam1.jpg");
-  background-repeat: none;
+  background-repeat: no-repeat;
 }

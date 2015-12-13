@@ -7,30 +7,30 @@
     Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
 }
 
-<link href="~/Content/LayOutAdmin/Csstimkiem.css" rel="stylesheet" />
 @*<div class="ql">
         <h2>Quản Lý Bài Đăng</h2>
     </div>*@
  @*Tìm Kiếm*@
     <div class="form-search">
-        @using (Html.BeginForm("TimQuanLyBaiDang", "Admin", FormMethod.Post))
+        @using (Html.BeginForm("TimQuanLyBaiDang", "Admin", FormMethod.Post, htmlAttributes: new { @class = "form-inline" }))
         {
 
-        <div id="tim">
-            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Tên Sản Phẩm..." })
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "form-control" })
         </div>
-        <div class="day1">
+        <div class="form-group">
             <label class="tungay">Từ ngày</label>
-            <input type="date" name="tungay" />
+            <input type="date" name="tungay" class="form-control" />
         </div>
 
-        <div class="day2">
+        <div class="form-group">
             <label class="denngay">Đến ngày</label>
-            <input type="date" name="denngay" />
+            <input type="date" name="denngay" class="form-control"/>
         </div>
 
-        <div id="buttontim">
-            <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="form-group">
+            <button type="submit" class="btn-1">Tìm <i class="fa fa-search"></i></button>
         </div>  
         }    
         @using (Html.BeginForm("SapXepGiamdan", "Admin"))
@@ -148,25 +148,25 @@
     @using (@Html.BeginForm("XuatSanPhamBanChay", "Admin", FormMethod.Post))
     {
         <div id="them">
-            <input type="submit" id="themuser" value="Thống Kê Sản Phẩm Bán Chạy" />
+            <input type="submit" class="btn-1" id="themuser" value="Thống Kê Sản Phẩm Bán Chạy" />
         </div>
     }
     @using (@Html.BeginForm("XuatSanPhamBanCham", "Admin", FormMethod.Post))
     {
         <div id="spcham">
-            <input type="submit" id="cham" value="Thống Kê Sản Phẩm Bán Chậm" />
+            <input type="submit" class="btn-1" id="cham" value="Thống Kê Sản Phẩm Bán Chậm" />
         </div>
     }
     @using (@Html.BeginForm("XuatSanPhamDanhGiaCao", "Admin", FormMethod.Post))
     {
         <div id="spcao">
-            <input type="submit" id="cao" value="Thống Kê Sản Phẩm Đánh Giá Cao" />
+            <input type="submit" class="btn-1" id="cao" value="Thống Kê Sản Phẩm Đánh Giá Cao" />
         </div>
     }
     @using (@Html.BeginForm("XuatSanPhamDanhGiaThap", "Admin", FormMethod.Post))
     {
         <div id="spthap">
-            <input type="submit" id="thap" value="Thống Kê Sản Phẩm Đánh Giá Thấp" />
+            <input type="submit" class="btn-1" id="thap" value="Thống Kê Sản Phẩm Đánh Giá Thấp" />
         </div>
     }
 </div>
