@@ -6,26 +6,18 @@
     Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
 }
 
-@using (Html.BeginForm("TimQuanLyUser", "Admin", FormMethod.Post))
+@using (Html.BeginForm("TimQuanLyUser", "Admin", FormMethod.Post, htmlAttributes: new { @class = "form-inline" }))
 {
-@*<div class="ql">
-    <h2>Quản Lý Đơn Đổi Điểm</h2>
-</div>*@
-
-    <div id="txttimkiem">
-
-        <div id="tim">
-
-            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Tên Người Dùng..." })
+    <div class="form-search">
+        <div class="form-group">
+            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "form-control", @placeholder = "Tên Người Dùng..." })
         </div>
-        <div id="buttontim">
-            <button type="submit"><img src="~/Hinh/search.png" /></button>
+        <div class="form-group">
+            <button class="btn-1" type="submit"><i class="fa fa-search"></i></button>
         </div>
     </div>
-
-<br />
 }
-   <table class="table" border="1">
+   <table class="table">
     <tr class="ngdung">
         <th>
             <label>Mã Người dùng</label>
@@ -95,14 +87,6 @@
 
 </table>
 
-    <br />
-@using (@Html.BeginForm("ThemUser", "Admin", FormMethod.Post))
-{ 
-<div id="them">
-    <input type="submit" id="themuser" value="Thêm Người Dùng"/>
-</div>
-}
-<br />
      <div class="phantrang">
         @*tao trang lien ket*@
         Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
@@ -112,88 +96,9 @@
         </div>       
     </div>
 
-<style>
-    .them {
-        background-color: #14a19a;
-        color: white;
-        width: 150px;
-        float: left;
-        margin-left: 50px;
-        margin-top: 30px;
-    }
-
-    #themuser {
-        color: white;
-        background-color: #14a19a;
-        width: 180px;
-        height: 50px;
-    }
- 
-        #themuser:hover {
-            background-color: #3bb49a;
-        }
-    .pt li {
-        display: inline;
-    }
-    .ngdung {
-        background-color: #14a19a;
-        color: white;
-    }
-
-    .ql {
-        color: blue;
-    }
-
-    #buttontim button {
-        width: 30px;
-        height: 30px;
-        padding: 0 0px 0 0px;
-        margin-left: 18px;
-        margin-top: 1.8%;
-    }
-
-    #buttontim img {
-        width: 30px;
-        height: 30px;
-        background-color: #b7c6a0;
-    }
-
-    #txttimkiem {
-        margin-top: 3%;
-        margin-left: 66%;
-        margin-right: 20px;
-        background-color: #e0e6e1;
-        height: 100px;
-        width: 350px;
-    }
-    .table {
-        background-color: #fafef7;
-    }
-
-        #txttimkiem input {
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgba(0,0,0,.5);
-        }
-
-    #tim {
-        float: left;
-    }
-
-        #tim input {
-            height: 32px;
-            width: 200px;
-            margin-top: 16%;
-            margin-left: 20%;
-        }
-
-    #buttontim {
-        float: right;
-        margin-right: 20%;
-        margin-top: 40px;
-    }
-
-        #buttontim img {
-            position: relative;
-            top: -7px;
-        }
-</style>
+@using (@Html.BeginForm("ThemUser", "Admin", FormMethod.Post))
+{
+    <div class="form-action">
+        <input type="submit" class="btn btn-1" value="Thêm Người Dùng" />
+    </div>
+}

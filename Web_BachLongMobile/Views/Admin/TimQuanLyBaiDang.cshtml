@@ -5,43 +5,47 @@
     ViewBag.Title = "QLBaiDang";
     Layout = "~/Views/LayOut/LayoutAdmin.cshtml";
 }
-<link href="~/Content/LayOutAdmin/Csstimkiem.css" rel="stylesheet" />
+
 @*<div class="ql">
         <h2>Quản Lý Bài Đăng</h2>
     </div>*@
 
     @*Tìm Kiếm*@
-    <div id="txttimkiem">
-    @using (Html.BeginForm("TimQuanLyBaiDang", "Admin", FormMethod.Post))
+   <div class="form-search clearfix">
+    @using (Html.BeginForm("TimQuanLyBaiDang", "Admin", FormMethod.Post, htmlAttributes: new { @class = "form-inline pull-left" }))
     {
-        <div id="tim">
 
-            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Tên Sản Phẩm..." })
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            @Html.TextBox("txttimkiem", "", htmlAttributes: new { @class = "form-control" })
         </div>
-        <div class="day1">
+        <div class="form-group">
             <label class="tungay">Từ ngày</label>
-            <input type="date" name="tungay" />
+            <input type="date" name="tungay" class="form-control" />
         </div>
 
-        <div class="day2">
+        <div class="form-group">
             <label class="denngay">Đến ngày</label>
-            <input type="date" name="denngay" />
+            <input type="date" name="denngay" class="form-control" />
         </div>
 
+        <div class="form-group form-action">
+            <button type="submit" class="btn-1">Tìm <i class="fa fa-search"></i></button>
+        </div>
+    }
+    @using (Html.BeginForm("SapXepGiamdan", "Admin", FormMethod.Get, htmlAttributes: new { @class = "pull-right sort-product" }))
+    {
         <div id="buttontim">
-            <button type="submit"><img src="~/Hinh/search.png" /></button>
+            <button id="aa" type="submit"><i class="fa fa-caret-down"></i></button>
         </div>
-     }
-        @using (Html.BeginForm("SapXepGiamdan", "Admin"))
-        {
-            <div id="buttontim">
-                <button id="aa" type="submit"><img src="~/Hinh/xu.png" /></button>
-            </div>
-        }
-    </div>
+    }
+</div>
 
 
-    <table class="table" border="1">
+
+
+
+    <table class="table">
         <tr class="qlbd">
             <th width="70">
                 Mã Sản Phẩm
@@ -142,34 +146,7 @@
         }
 
     </table>
-<div class="thongke">
-    <br />
-    @using (@Html.BeginForm("TKXuatSanPhamBanChay", "Admin", new { @tungay = @ViewBag.tungay, @denngay = @ViewBag.denngay }))
-    {
-        <div id="them">
-            <input type="submit" id="themuser" value="Thống Kê Sản Phẩm Bán Chạy" />
-        </div>
-    }
-    @using (@Html.BeginForm("TKXuatSanPhamBanCham", "Admin", new { @tungay = @ViewBag.tungay, @denngay = @ViewBag.denngay }))
-    {
-        <div id="spcham">
-            <input type="submit" id="cham" value="Thống Kê Sản Phẩm Bán Chậm" />
-        </div>
-    }
-    @using (@Html.BeginForm("TKXuatSanPhamDanhGiaCao", "Admin", new { @tungay = @ViewBag.tungay, @denngay = @ViewBag.denngay }))
-    {
-        <div id="spcao">
-            <input type="submit" id="cao" value="Thống Kê Sản Phẩm Đánh Giá Cao" />
-        </div>
-    }
-    @using (@Html.BeginForm("TKXuatSanPhamDanhGiaThap", "Admin", new { @tungay = @ViewBag.tungay, @denngay = @ViewBag.denngay }))
-    {
-        <div id="spthap">
-            <input type="submit" id="thap" value="Thống Kê Sản Phẩm Đánh Giá Thấp" />
-        </div>
-    }
-</div>
-<br />
+
 
     <div class="phantrang">
         @*tao trang lien ket*@
@@ -179,133 +156,29 @@
             @Html.PagedListPager(Model, page => Url.Action("TimQuanLyBaiDang", new { page = page, @tim = @ViewBag.tim, @tungay = @ViewBag.tungay, @denngay = @ViewBag.denngay }))
         </div>
     </div>
-
-<style>
-    .them {
-        background-color: #14a19a;
-        width: 240px;
-        color: white;
-        float: left;
-        margin-left: 50px;
-        margin-top: 30px;
+<div class="statistic">
+    @using (@Html.BeginForm("XuatSanPhamBanChay", "Admin", FormMethod.Post))
+    {
+        <div id="them">
+            <input type="submit" class="btn-1" id="themuser" value="Thống Kê Sản Phẩm Bán Chạy" />
+        </div>
     }
-
-    #themuser {
-        background-color: #14a19a;
-        width: auto;
-        height: 50px;
-        color: white;
+    @using (@Html.BeginForm("XuatSanPhamBanCham", "Admin", FormMethod.Post))
+    {
+        <div id="spcham">
+            <input type="submit" class="btn-1" id="cham" value="Thống Kê Sản Phẩm Bán Chậm" />
+        </div>
     }
-
-        #themuser:hover {
-            background-color: #3bb49a;
-        }
-
-    #spcham {
-        background-color: #14a19a;
-        color: white;
-        float: left;
-        margin-left: 220px;
-        margin-top: -50px;
+    @using (@Html.BeginForm("XuatSanPhamDanhGiaCao", "Admin", FormMethod.Post))
+    {
+        <div id="spcao">
+            <input type="submit" class="btn-1" id="cao" value="Thống Kê Sản Phẩm Đánh Giá Cao" />
+        </div>
     }
-
-    #cham {
-        background-color: #14a19a;
-        width: auto;
-        height: 50px;
-        color: white;
+    @using (@Html.BeginForm("XuatSanPhamDanhGiaThap", "Admin", FormMethod.Post))
+    {
+        <div id="spthap">
+            <input type="submit" class="btn-1" id="thap" value="Thống Kê Sản Phẩm Đánh Giá Thấp" />
+        </div>
     }
-
-        #cham:hover {
-            background-color: #3bb49a;
-        }
-
-    #spcao {
-        background-color: #14a19a;
-        color: white;
-        float: left;
-        width: 240px;
-        margin-left: 445px;
-        margin-top: -50px;
-    }
-
-    #cao {
-        background-color: #14a19a;
-        width: auto;
-        height: 50px;
-        color: white;
-    }
-
-        #cao:hover {
-            background-color: #3bb49a;
-        }
-
-    #spthap {
-        background-color: #14a19a;
-        color: white;
-        width: 240px;
-        float: left;
-        margin-left: 695px;
-        margin-top: -50px;
-    }
-
-    #thap {
-        background-color: #14a19a;
-        width: auto;
-        height: 50px;
-        color: white;
-    }
-
-        #thap:hover {
-            background-color: #3bb49a;
-        }
-    .qlbd {
-        background-color: #14a19a;
-        color: white;
-    }
-
-    .table {
-        background-color: #fafef7;
-    }
-
-    div.ql {
-        color: blue;
-    }
-
-    #txttimkiem {
-        margin-left: 0px;
-        margin-top: -45px;
-        width: 1038px;
-    }
-
-    .pt li {
-        display: inline;
-    }
-
-    #buttontim img {
-        margin-left: -2px;
-        margin-top: 5px;
-    }
-
-    #buttontim {
-        width: 10px;
-        height: 10px;
-        float: right;
-        margin-top: -30px;
-        margin-right: 160px;
-    }
-        #buttontim button#aa {
-            width: 0px;
-            height: 0px;
-            float: right;
-            margin-top: 2px;
-            margin-right: -70px;
-        }
-
-            #buttontim button#aa img {
-                width: 35px;
-                height: 35px;
-                margin-left: -2px;
-                margin-top: 2px;
-            }
-</style>
+</div>

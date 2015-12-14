@@ -253,13 +253,17 @@ img {
   padding-bottom: 10px;
   text-transform: capitalize;
 }
+/* line 246, ../sass/Site.scss */
+.main-content .content h2.sum {
+  color: #ff6d00;
+}
 
-/* line 251, ../sass/Site.scss */
+/* line 254, ../sass/Site.scss */
 .product-list .row {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 255, ../sass/Site.scss */
+/* line 258, ../sass/Site.scss */
 .product-list .item {
   margin-bottom: 30px;
   padding: 15px;
@@ -271,72 +275,72 @@ img {
   transition: all ease-in 0.3s;
   min-height: 340px;
 }
-/* line 261, ../sass/Site.scss */
+/* line 264, ../sass/Site.scss */
 .product-list .item:hover, .product-list .item:focus {
   border-color: #ddddcc;
 }
-/* line 265, ../sass/Site.scss */
+/* line 268, ../sass/Site.scss */
 .product-list .image {
   text-align: center;
   min-height: 175px;
 }
-/* line 269, ../sass/Site.scss */
+/* line 272, ../sass/Site.scss */
 .product-list .title {
   font-size: 16px;
 }
-/* line 271, ../sass/Site.scss */
+/* line 274, ../sass/Site.scss */
 .product-list .title a {
   color: #333;
 }
-/* line 273, ../sass/Site.scss */
+/* line 276, ../sass/Site.scss */
 .product-list .title a:hover, .product-list .title a:focus {
   color: blue;
 }
-/* line 280, ../sass/Site.scss */
+/* line 283, ../sass/Site.scss */
 .product-list .manu {
   color: #999;
   font-size: 13px;
 }
-/* line 284, ../sass/Site.scss */
+/* line 287, ../sass/Site.scss */
 .product-list .price {
   color: #ff6d00;
 }
-/* line 288, ../sass/Site.scss */
+/* line 291, ../sass/Site.scss */
 .product-list .quantity {
   font-size: 13px;
   color: #666;
 }
 
-/* line 294, ../sass/Site.scss */
+/* line 297, ../sass/Site.scss */
 .footer {
   background-color: #444;
   color: #fff;
 }
-/* line 297, ../sass/Site.scss */
+/* line 300, ../sass/Site.scss */
 .footer .container {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 301, ../sass/Site.scss */
+/* line 304, ../sass/Site.scss */
 .footer address {
   margin-bottom: 0;
 }
-/* line 304, ../sass/Site.scss */
+/* line 307, ../sass/Site.scss */
 .footer address p i {
   min-width: 15px;
   margin-right: 10px;
 }
-/* line 308, ../sass/Site.scss */
+/* line 311, ../sass/Site.scss */
 .footer address p:last-child {
   margin-bottom: 0;
 }
 
-/* line 316, ../sass/Site.scss */
+/* line 319, ../sass/Site.scss */
 .product-detail .price {
   color: #ff6d00;
   font-size: 16px;
 }
-/* line 320, ../sass/Site.scss */
+/* line 323, ../sass/Site.scss */
 .product-detail .button-submit {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -359,11 +363,11 @@ img {
   border-color: #666;
   color: #fff;
 }
-/* line 323, ../sass/Site.scss */
+/* line 326, ../sass/Site.scss */
 .product-detail .button-submit i {
   font-size: 18px;
 }
-/* line 328, ../sass/Site.scss */
+/* line 331, ../sass/Site.scss */
 .product-detail .rating ul {
   padding-left: 0;
   margin-bottom: 0;
@@ -377,7 +381,7 @@ img {
 .product-detail .rating ul:after {
   clear: both;
 }
-/* line 332, ../sass/Site.scss */
+/* line 335, ../sass/Site.scss */
 .product-detail .rating ul li {
   float: left;
   width: 25px;
@@ -385,15 +389,15 @@ img {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 342, ../sass/Site.scss */
+/* line 345, ../sass/Site.scss */
 .product-detail .btn-1 {
   padding: 10px 25px;
 }
-/* line 346, ../sass/Site.scss */
+/* line 349, ../sass/Site.scss */
 .product-detail .rate-product {
   margin-top: 20px;
 }
-/* line 348, ../sass/Site.scss */
+/* line 351, ../sass/Site.scss */
 .product-detail .rate-product ul {
   padding-left: 0;
   margin-bottom: 0;
@@ -407,7 +411,7 @@ img {
 .product-detail .rate-product ul:after {
   clear: both;
 }
-/* line 352, ../sass/Site.scss */
+/* line 355, ../sass/Site.scss */
 .product-detail .rate-product ul li {
   float: left;
   width: 25px;
@@ -415,7 +419,7 @@ img {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 358, ../sass/Site.scss */
+/* line 361, ../sass/Site.scss */
 .product-detail .rate-product ul li a {
   height: 30px;
   width: 30px;
@@ -424,21 +428,21 @@ img {
   display: inline-block;
 }
 
-/* line 372, ../sass/Site.scss */
+/* line 375, ../sass/Site.scss */
 table thead th, .table thead th {
   white-space: nowrap;
 }
-/* line 378, ../sass/Site.scss */
+/* line 381, ../sass/Site.scss */
 table > tbody > tr > td, .table > tbody > tr > td {
   vertical-align: middle;
 }
-/* line 384, ../sass/Site.scss */
+/* line 387, ../sass/Site.scss */
 table tfoot tr, .table tfoot tr {
   font-size: 18px;
   color: #ff6d00;
 }
 
-/* line 391, ../sass/Site.scss */
+/* line 394, ../sass/Site.scss */
 div#index {
   width: auto;
   margin-left: 0;
@@ -448,97 +452,121 @@ div#index {
   background-repeat: no-repeat;
 }
 
-/* line 404, ../sass/Site.scss */
+/* line 407, ../sass/Site.scss */
 #admin-page table thead th, #admin-page .table thead th {
   white-space: inherit;
 }
-/* line 409, ../sass/Site.scss */
+/* line 412, ../sass/Site.scss */
 #admin-page .navbar-static-top {
   padding-top: 0;
   background-color: #4397de;
   color: #fff;
 }
-/* line 413, ../sass/Site.scss */
+/* line 416, ../sass/Site.scss */
 #admin-page .navbar-static-top .container-fluid {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 417, ../sass/Site.scss */
+/* line 419, ../sass/Site.scss */
+#admin-page .navbar-static-top .container-fluid h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 424, ../sass/Site.scss */
 #admin-page .navbar-static-top ul {
   padding-left: 0;
+  margin-bottom: 0;
 }
-/* line 419, ../sass/Site.scss */
+/* line 427, ../sass/Site.scss */
 #admin-page .navbar-static-top ul li {
   list-style: none;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 423, ../sass/Site.scss */
+/* line 431, ../sass/Site.scss */
 #admin-page .navbar-static-top ul li a {
   color: #fff;
   font-size: 16px;
 }
-/* line 426, ../sass/Site.scss */
+/* line 434, ../sass/Site.scss */
 #admin-page .navbar-static-top ul li a:hover, #admin-page .navbar-static-top ul li a:focus {
   color: #333;
 }
-/* line 433, ../sass/Site.scss */
+/* line 441, ../sass/Site.scss */
 #admin-page .navbar-static-top .navbar-brand {
   color: #fff;
   font-size: 18px;
 }
-/* line 436, ../sass/Site.scss */
+/* line 444, ../sass/Site.scss */
 #admin-page .navbar-static-top .navbar-brand:hover, #admin-page .navbar-static-top .navbar-brand:focus {
   color: #333;
 }
-/* line 441, ../sass/Site.scss */
+/* line 449, ../sass/Site.scss */
 #admin-page .main-content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 446, ../sass/Site.scss */
+/* line 454, ../sass/Site.scss */
 #admin-page .form-search {
   margin-bottom: 30px;
 }
-/* line 448, ../sass/Site.scss */
+/* line 456, ../sass/Site.scss */
 #admin-page .form-search label {
   display: block;
 }
-/* line 451, ../sass/Site.scss */
+/* line 459, ../sass/Site.scss */
 #admin-page .form-search .form-group {
   margin-right: 15px;
 }
-/* line 453, ../sass/Site.scss */
+/* line 461, ../sass/Site.scss */
 #admin-page .form-search .form-group:last-child {
   margin-right: 0;
 }
-/* line 457, ../sass/Site.scss */
+/* line 465, ../sass/Site.scss */
 #admin-page .form-search .form-action {
   vertical-align: bottom;
 }
-/* line 460, ../sass/Site.scss */
+/* line 468, ../sass/Site.scss */
 #admin-page .form-search .btn-1 {
   padding: 6px 20px;
 }
-/* line 464, ../sass/Site.scss */
+/* line 472, ../sass/Site.scss */
 #admin-page .form-search .sort-product {
   margin-top: 25px;
 }
-/* line 469, ../sass/Site.scss */
+/* line 477, ../sass/Site.scss */
 #admin-page .statistic {
   margin-top: 30px;
 }
-/* line 471, ../sass/Site.scss */
+/* line 479, ../sass/Site.scss */
 #admin-page .statistic form {
   display: inline-block;
 }
-/* line 476, ../sass/Site.scss */
+/* line 484, ../sass/Site.scss */
 #admin-page .login {
   padding: 20px;
 }
-/* line 478, ../sass/Site.scss */
+/* line 486, ../sass/Site.scss */
 #admin-page .login .title {
   margin-bottom: 20px;
   font-size: 25px;
   color: #ff6d00;
+}
+
+/* line 494, ../sass/Site.scss */
+.login-panel {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 506, ../sass/Site.scss */
+.login-panel.panel-default > .panel-heading {
+  background-color: #4397de;
+  color: #fff;
 }
